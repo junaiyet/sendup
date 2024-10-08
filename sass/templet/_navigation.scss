@@ -1,0 +1,22 @@
+.navigation {
+    background-color: $deep-white;
+    padding: 40px;
+    .nav-link {
+        color: $primary-color;
+        font-family: $primary-font;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 24px;
+    }
+    .btn-primary {
+        background-color: $deep-white;
+        border: $deep-white;
+        color: $primary-color;
+        padding: 4px 17px;
+        &:hover {
+            background-color: $primary-bg;
+            border: $primary-bg;
+            color: $primary-color;
+        }
+    }
+}

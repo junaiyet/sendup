@@ -1,0 +1,99 @@
+/*  typography */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
+// .inter-<uniquifier> {
+//     font-family: "Inter", sans-serif;
+//     font-optical-sizing: auto;
+//     font-weight: <weight>;
+//     font-style: normal;
+//   }
+body {
+    font-family: $primary-font;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+// p,
+// .paragraph {
+//     font-weight: 400;
+//     color: $text-color;
+//     font-size: 16px;
+//     line-height: 1.7;
+//     font-family: $primary-font;
+// }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+// h1,
+// .h1 {
+//     font-size: 50px;
+//     line-height: 65px;
+// }
+// @include mobile{
+//     h1, .h1 {
+//         font-size: 26px;
+//         line-height: 40px;
+//     }
+// }
+// @include tablet{
+//     h1, .h1 {
+//         font-size: 44px;
+//         line-height: 58px;
+//     }
+// }
+// @include desktop{
+//     h1, .h1 {
+//         font-size: 40px;
+//         line-height: 50px;
+//     }
+// }
+// @include  desktop-lg{
+//     h1, .h1 {
+//         font-size: 42px;
+//         line-height: 50px;
+//     }
+// }
+// h2,
+// .h2 {
+//     font-size: 26px;
+// }
+// @include mobile{
+//     h2, .h2 {
+//         font-size: 20px;
+//     }
+// }
+h3,
+.h3 {
+    font-size: 26px;
+    line-height: 31px;
+    font-weight: 600;
+    background-color: red;
+}
+
+// h4,
+// .h4 {
+//     font-size: 20px;
+//     font-weight: 700;
+// }
+// h5,
+// .h5 {
+//     font-size: 18px;
+//     font-weight: 700;
+// }
+// h6,
+// .h6 {
+//     font-size: 16px;
+//     font-weight: 700;
+// }
