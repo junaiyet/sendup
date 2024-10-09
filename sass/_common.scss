@@ -29,7 +29,12 @@ button {
         outline: 0;
     }
 }
-
+.underline{
+    font-weight: 600;
+    text-decoration: underline;
+    color: $primary-color;
+    display: inline-block;
+}
 .form-control:focus {
     border-color: $border-color;
     outline: 0;
@@ -58,10 +63,27 @@ button {
 .main-content {
     width: 486px;
     margin: 0 auto;
+    margin-bottom: 100px;
 }
+.input{
+    height: 48px;
+    background: $fild-color;
+    &::placeholder{
+        background: $fild-color;
 
+    }
+}
+.socal-icon{
+    a{
+        width: 33%;
+        border: 1px solid $border-color;
+        padding: 8px;
+        border-radius: 9999px;
+        text-align: center;
+    }
+}
 .footer {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
