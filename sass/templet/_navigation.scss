@@ -20,3 +20,10 @@
         }
     }
 }
+
+
+@include mobile{
+    .navigation{
+            padding: 15px;
+    }
+}

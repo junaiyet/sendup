@@ -26,6 +26,13 @@ p,
     // line-height: 1.7;
     font-family: $primary-font;
 }
+@include mobile{
+
+    p, .paragraph {
+        font-size: 12px;
+
+    }
+}
 h1,
 h2,
 h3,
@@ -35,45 +42,19 @@ h6 {
     margin: 0;
     padding: 0;
 }
+h2,
+.h2 {
+    font-size: 50px;
+    line-height: 44px;
+    font-weight: 600;
+}
+@include mobile{
+    h2, .h2 {
+        font-size: 22px;
+        line-height: 25px;
 
-// h1,
-// .h1 {
-//     font-size: 50px;
-//     line-height: 65px;
-// }
-// @include mobile{
-//     h1, .h1 {
-//         font-size: 26px;
-//         line-height: 40px;
-//     }
-// }
-// @include tablet{
-//     h1, .h1 {
-//         font-size: 44px;
-//         line-height: 58px;
-//     }
-// }
-// @include desktop{
-//     h1, .h1 {
-//         font-size: 40px;
-//         line-height: 50px;
-//     }
-// }
-// @include  desktop-lg{
-//     h1, .h1 {
-//         font-size: 42px;
-//         line-height: 50px;
-//     }
-// }
-// h2,
-// .h2 {
-//     font-size: 26px;
-// }
-// @include mobile{
-//     h2, .h2 {
-//         font-size: 20px;
-//     }
-// }
+    }
+}
 h3,
 .h3 {
     font-size: 26px;
@@ -81,18 +62,8 @@ h3,
     font-weight: 600;
 }
 
-// h4,
-// .h4 {
-//     font-size: 20px;
-//     font-weight: 700;
-// }
-// h5,
-// .h5 {
-//     font-size: 18px;
-//     font-weight: 700;
-// }
-// h6,
-// .h6 {
-//     font-size: 16px;
-//     font-weight: 700;
-// }
+@include mobile{
+    h3, .h3 {
+        font-size: 24px;
+    }
+}
