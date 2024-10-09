@@ -70,9 +70,11 @@ button {
     margin: 0 auto;
     margin-bottom: 100px;
 }
-.input{
+.input,.select{
     height: 48px;
+    padding: 0 10px;
     background: $fild-color;
+    border-radius: 10px;
     &::placeholder{
         background: $fild-color;
 
@@ -117,3 +119,18 @@ button {
         padding: 0 20px;
     }
 }
+
+:focus-visible {
+    outline: 0;
+}
+
+  
+// select {
+//     background: url('../images/bd.png')  no-repeat;
+//     background-position: right 10px top 12px !important;
+//     -moz-appearance: none;
+//     -moz-appearance: none;
+//     -webkit-appearance: none;
+//     appearance: none;
+//   }
+  

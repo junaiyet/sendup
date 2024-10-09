@@ -22,3 +22,32 @@
     font-weight: 600;
     color: #4B7972;
 }
+
+.account-types{
+    width: 700px;
+    .account{
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        .account-type{
+            padding: 50px;
+            width: 48%;
+            background-color: $fild-color;
+            border-radius: 10px;
+        }
+    }
+}
+
+@include mobile{
+    .account-types{
+        width: auto;
+        .account{
+           flex-direction: column;
+            .account-type{
+                padding: 20px;
+                width: 100%;
+            }
+        }
+    }  
+}
+
