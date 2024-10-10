@@ -1,0 +1,94 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sendup</title>
+    <!-- ** Plugins Needed for the Project ** -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+    <!-- style.css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navigation">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="images/logo.png" alt="">
+                </a>
+
+            </div>
+        </nav>
+    </header>
+    <section class="section ">
+        <div class="main-content ">
+         
+            <h3 class="text-center mb-3">Enter your address</h3>
+            <p class="text-center">You may need to provide proof of this.</p>
+            <form action="">
+                <div class="mb-3">
+                    <label for="" class="paragraph">Home Address</label>
+                    <input class="form-control input" type="text">
+                </div>
+                <div class="mb-3">
+                    <label for="" class="paragraph">Apartment, suite, etc.</label>
+                    <input class="form-control input" type="text">
+                </div>
+                <div class="mb-3">
+                    <label for="" class="paragraph">City</label>
+                    <input class="form-control input" type="text">
+                </div>
+          
+                <div class="mb-3">
+                    <label for="" class="paragraph">Postcode</label>
+                    <input class="form-control input" type="text">
+                </div>
+                <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Launch demo modal
+                </button> -->
+            </form>
+            <button class="btn  btn-primary w-100" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Save</button>
+        </div>
+    </section>
+    <footer class="footer d-flex align-items-center justify-content-center">
+        <p>© Sendup Payments Limited 2024</p>
+    </footer>
+<!-- Modal -->
+<!-- Button trigger modal -->
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header border-0">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center">
+          <h5 class="mb-2">Confirm your identity</h5>
+          <p>Select your document's issuing country</p>
+          <form action=""  class="upload-area">
+            <button class="btn-backroundless"><img src="images/top-arrow-icon.png" alt=""> <br> <b>Upload your document</b></button>
+            <p class="mb-4">You can click or drag and drop your government-issued identification document for verification</p>
+            <button class="btn btn-primary">Or select file</button>
+          </form>
+          <p class="mt-2 mb-5">We Accepted PDF, JPG, PNG, Maximum File Size: 10MB Ensure the document is clear, legible, and shows all details</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary w-100">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- Modal -->
+    <!-- jquery -->
+    <script src="plugins/jquery/jquery.min.js"></script>
+    <!--Bootstrap  -->
+    <script src="plugins/bootstrap/bootstrap.bundle.min.js"></script>
+    <!--  -->
+    <script src="js//script.js"></script>
+</body>
+
+</html>
