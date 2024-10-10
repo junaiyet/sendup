@@ -1,6 +1,7 @@
 
+
 .dasboard{
-    gap: 116px;
+    gap: 40px;
     .dasboard-navigation{
         background-color:$fild-color;
         height: 100vh;
@@ -20,4 +21,146 @@
             }
         }
     }
+    .top-nav{
+        margin-top: 60px;
+        margin-bottom: 90px;
+        display: flex;
+        justify-content: end;
+        align-items: end;
+        .nav-link{
+            font-weight: 600;
+        }
+        .image-radious{
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+        }
+    }
+    .dasboard-main-content{
+        margin-right: 150px;
+    }
+
+    .btn-primary-light{
+        background-color: $deep-white;
+        border: $deep-white;
+        color: $primary-color;
+        padding: 4px 17px;
+        border-radius: 24px;
+        transition: all linear .3s;
+        &:hover {
+            background-color: $primary-bg;
+            border: $primary-bg;
+            color: $primary-color;
+        }
+    }
+    .btn-sm.btn-primary {
+        background-color:  $primary-bg;
+        border:  $primary-bg;
+        color: $primary-color;
+        padding: 4px 17px;
+        border-radius: 24px;
+        transition: all linear .3s;
+        &:hover {
+            background-color:$deep-white ;
+            border: $deep-white;
+            color: $primary-color;
+        }
+    }
+    .add-country-box{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+      
+        
+        .add-country-items{
+            padding: 16px;
+            border-radius: 16px;
+            width: 256px;
+            background-color: $fild-color;
+        }
+    }
+    .btn-dottet{
+        border: 2px dotted $border-color;
+    }
+    .task-box{
+        background-color: $fild-color;
+        padding: 16px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 16px;
+        .content-area{
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+    }
+    .calculator-box-items{
+        display: flex;
+        gap: 20px;
+        justify-content: space-between;
+        border: 1px solid $border-color;
+        padding: 24px;
+        border-radius: 16px;
+    }
+    .currency-box {
+        display: flex;
+        align-items: center;
+        background-color: #f1f1f1; 
+        padding: 10px;
+        border-radius: 10px; 
+        justify-content: space-between;
+        
+        .arrow {
+          font-size: 18px;
+          margin-left: 5px;  
+        }
+      }
+      .fee-box{
+        border: 1px solid $border-color;
+        border-radius: 16px;
+        padding: 9px;
+        position: relative;
+        text-align: center;
+        .icon{
+            position: absolute;
+            left: 0;
+            top: -15px;
+            border-radius: 50%;
+            text-align: center;
+            width: 32px;
+            height: 32px;
+            background-color: $fild-color;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+      }
+      .calculator-bottom{
+        .icon{
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background-color: $fild-color;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+      }
+}
+@include mobile{
+    .dasboard{
+        .dasboard-main-content {
+            margin-right: 20px;
+        }   
+        .calculator-box-items {
+
+            flex-direction: column;
+        }
+    } 
+}
+@include mobile{
+    .dasboard-main-content{
+        margin-right: 0;
+    } 
 }
