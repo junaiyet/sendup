@@ -27,3 +27,55 @@
             padding: 15px;
     }
 }
+
+.account-step-items{
+    border-top: 2px solid $border-color;
+    position: relative;
+    &::after{
+        position: absolute;
+        left: 0;
+        top: -1px;
+        background-color: $primary-color;
+        width: 100px;
+        height: 2px;
+        content: '';
+    }
+    &::before{
+        position: absolute;
+        left: 96px;
+        top: -4px;
+        background-color: $primary-color;
+        width: 8px;
+        height: 8px;
+        content: "";
+        z-index: 9;
+        border-radius: 50%;
+    }
+  
+}
+
+.account-step-items-country{
+    &::after{
+        width: 190px;  
+    }
+    &::before{
+        left: 185px;
+    }
+}
+
+.account-step-items-otp{
+    &::after{
+        width: 242px;  
+    }
+    &::before{
+        left: 235px;
+    }  
+}
+.account-step-items-password{
+    &::after{
+        width: 100%;  
+    }
+    &::before{
+        left: 100%;
+    }  
+}

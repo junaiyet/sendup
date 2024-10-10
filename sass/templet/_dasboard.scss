@@ -1,0 +1,23 @@
+
+.dasboard{
+    gap: 116px;
+    .dasboard-navigation{
+        background-color:$fild-color;
+        height: 100vh;
+        padding: 60px 120px;
+
+    }
+    .navbar{
+        .navbar-brand{
+            margin-bottom: 92px;
+        }
+        .nav-link{
+            color: $primary-color;
+            font-weight: 600;
+            img{
+                margin-right: 5px;
+                transform: translateY(-2px);
+            }
+        }
+    }
+}
