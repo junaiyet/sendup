@@ -1,279 +1,387 @@
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sendup</title>
     <!-- ** Plugins Needed for the Project ** -->
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css" />
     <!-- style.css -->
-    <link rel="stylesheet" href="css/style.css">
-</head>
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      .dasboard-navigation {
+        background-color: #f8f9fa;
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        z-index: 1;
+        transform: translateX(-100%);
+        transition: 0.3s;
+        width: 250px;
+        min-height: 100vh;
+      }
+      .navigation-open {
+        transform: translateX(0);
+      }
+    </style>
+  </head>
 
-<body class="dasboard-body">
-    <div class="d-flex align-items-start dasboard">
-        <div class="dasboard-navigation">
-            <nav class="navbar navbar-expand-lg ">
-                <div class="container-fluid flex-column">
-                  <a class="navbar-brand" href="#">
-                    <img src="images/logo-dasboard.png" alt="">
+  <body class="dasboard-body">
+    <div class="relative">
+      <div class="d-flex align-items-start dasboard">
+        <div id="open-navbar">X</div>
+        <div id="dasboard-navigation" class="dasboard-navigation">
+          <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid flex-column">
+              <a class="navbar-brand" href="#">
+                <img src="images/logo-dasboard.png" alt="" />
+              </a>
+              <button
+                id="close-navbar"
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                X
+              </button>
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 flex-column">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    ><img src="images/home-active-icon.png" alt="" />Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"
+                    ><img src="images/card-icon.png" alt="" />Card</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"
+                    ><img
+                      src="images/recipients-icon.png"
+                      alt=""
+                    />Recipients</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"
+                    ><img src="images/payments-icon.png" alt="" />Payments</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"
+                    ><img src="images/earn-icon.png" alt="" />Earn £75
                   </a>
-                  <ul class="navbar-nav me-auto mb-2 mb-lg-0 flex-column">
-                    <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="#"><img src="images/home-active-icon.png" alt="">Home</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#"><img src="images/card-icon.png" alt="">Card</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#"><img src="images/recipients-icon.png" alt="">Recipients</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#"><img src="images/payments-icon.png" alt="">Payments</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#"><img src="images/earn-icon.png" alt="">Earn £75 </a>
-                    </li>
-                  </ul>
-                </div>
-              </nav>
+                </li>
+              </ul>
+            </div>
+          </nav>
         </div>
-            <div class="dasboard-content container">
-             <div class="top-nav">
-              <div class="top-nav-icon">
-                <!-- <a class="icon">
+        <div class="dasboard-content container">
+          <div class="top-nav">
+            <div class="top-nav-icon">
+              <!-- <a class="icon">
                   <img src="images/left-arrow-icon.png" alt="">
                 </a> -->
-              </div>
-                <ul class="d-flex gap-3">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"><img class="image-radious" src="images/bel-icon.png" alt=""></a>
-                      </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"><img class="image-radious" src="images/network-icon.png" alt=""></a>
-                      </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <img class="image-radious" src="images/profile-imgae.png" alt="">   User Name
-                        </a>
-                        <ul class="dropdown-menu p-3">
-                        <li><a class="dropdown-item nav-link mb-2" href="#">Create invoice</a></li>
-                        <li><a class="dropdown-item nav-link" href="#">Share payment link </a></li>
-                 
-                        </ul>
-                    </li>
+            </div>
+            <ul class="d-flex gap-3">
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><img class="image-radious" src="images/bel-icon.png" alt=""
+                /></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><img
+                    class="image-radious"
+                    src="images/network-icon.png"
+                    alt=""
+                /></a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <img
+                    class="image-radious"
+                    src="images/profile-imgae.png"
+                    alt=""
+                  />
+                  User Name
+                </a>
+                <ul class="dropdown-menu p-3">
+                  <li>
+                    <a class="dropdown-item nav-link mb-2" href="#"
+                      >Create invoice</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item nav-link" href="#"
+                      >Share payment link
+                    </a>
+                  </li>
                 </ul>
-             </div>
+              </li>
+            </ul>
+          </div>
 
-             <div class="dasboard-main-content">
-                 <div class="check-email">
-                     <div class="d-flex content gap-2 mb-4">
-                        <div class="image">
-                            <img src="images/info-icon.png" alt="">
-                        </div>
-                        <div class="text">
-                            <p>Your USD account details have been suspended. Any payments to these details will be returned to the
-                                sender. Update your trading address by Oct 22 to avoid losing your USD account details. Ignore this if
-                                you have updated your address. <br>
-                                <a href="" class="underline"> Learn more</a>
-                            </p>
-                        </div>
-                    </div>
-    
-                 </div>
-                 <h3 class="mb-3">Account</h3>
-                 <div class="d-flex gap-2 mb-3">
-                    <button class="btn btn-sm btn-primary">Send <img src="images/down-arrow.png" alt=""></button>
-                    <button class="btn btn-sm btn-primary-light-sm">Add money </button>
-                    <button class="btn btn-sm btn-primary-light-sm">Request <img src="images/down-arrow.png" alt=""></button>
-                 </div>
-                 <div class="add-country-box">
-                    <div class="add-country-items">
-                        <div class="d-flex align-items-center gap-2 mb-5 pb-4">
-                              <img src="images/GBP-icon.png" alt="">
-                              <b>GBP</b>
-                        </div>
-                        <span><b>00.00</b></span>
-                    </div>
-                    <div class="add-country-items">
-                        <div class="mb-5 pb-4">
-                            <button class="btn btn-dottet" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><img src="images/plus-icon.png" alt=""></button>
+          <div class="dasboard-main-content">
+            <div class="check-email">
+              <div class="d-flex content gap-2 mb-4">
+                <div class="image">
+                  <img src="images/info-icon.png" alt="" />
+                </div>
+                <div class="text">
+                  <p>
+                    Your USD account details have been suspended. Any payments
+                    to these details will be returned to the sender. Update your
+                    trading address by Oct 22 to avoid losing your USD account
+                    details. Ignore this if you have updated your address.
+                    <br />
+                    <a href="" class="underline"> Learn more</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <h3 class="mb-3">Account</h3>
+            <div class="d-flex gap-2 mb-3">
+              <button class="btn btn-sm btn-primary">
+                Send <img src="images/down-arrow.png" alt="" />
+              </button>
+              <button class="btn btn-sm btn-primary-light-sm">Add money</button>
+              <button class="btn btn-sm btn-primary-light-sm">
+                Request <img src="images/down-arrow.png" alt="" />
+              </button>
+            </div>
+            <div class="add-country-box">
+              <div class="add-country-items">
+                <div class="d-flex align-items-center gap-2 mb-5 pb-4">
+                  <img src="images/GBP-icon.png" alt="" />
+                  <b>GBP</b>
+                </div>
+                <span><b>00.00</b></span>
+              </div>
+              <div class="add-country-items">
+                <div class="mb-5 pb-4">
+                  <button
+                    class="btn btn-dottet"
+                    data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop"
+                  >
+                    <img src="images/plus-icon.png" alt="" />
+                  </button>
+                </div>
+                <p>Add another currency to your account.</p>
+              </div>
+            </div>
+            <h3 class="mb-3">Tasks</h3>
+            <div class="task-box">
+              <div class="content-area">
+                <div class="image">
+                  <img src="images/task-icon.png" alt="" />
+                </div>
+                <div class="content">
+                  <b>5 USD to DigitalOcean</b>
+                  <p>Declined — not enough money in your account</p>
+                </div>
+              </div>
+              <div class="button-area">
+                <button class="btn btn-sm btn-primary">Add money</button>
+                <button class="btn btn-sm btn-primary-light">Dismiss</button>
+              </div>
+            </div>
+            <div class="d-flex justify-content-between mt-3">
+              <h3 class="mb-3">Transactions</h3>
+              <a href="" class="underline">See all</a>
+            </div>
+            <table class="w-100">
+              <tbody>
+                <tr>
+                  <td class="py-3">
+                    <div class="d-flex align-items-center gap-2">
+                      <div class="image">
+                        <img src="images/transactions-icon.png" alt="" />
                       </div>
-                        <p>Add another currency to your
-                            account.</p>
+                      <p><b>DigitalOcean </b><br />Declined · Today</p>
                     </div>
-                 </div>
-                 <h3 class="mb-3">Tasks</h3>
-                 <div class="task-box">
-                    <div class="content-area">
-                        <div class="image"><img src="images/task-icon.png" alt=""></div>
-                        <div class="content">
-                            <b>5 USD to DigitalOcean</b>
-                            <p>Declined — not enough money in your account</p>
-                        </div>
+                  </td>
+                  <td class="text-end py-3"><b>5 USD</b></td>
+                </tr>
+                <tr>
+                  <td class="py-3">
+                    <div class="d-flex align-items-center gap-2">
+                      <div class="image">
+                        <img src="images/transactions-icon.png" alt="" />
+                      </div>
+                      <p><b>DigitalOcean </b><br />Declined · Today</p>
                     </div>
-                    <div class="button-area">
-                        <button class="btn btn-sm btn-primary">Add money</button>
-                    <button class="btn btn-sm btn-primary-light">Dismiss </button>
+                  </td>
+                  <td class="text-end py-3"><b>5 USD</b></td>
+                </tr>
+                <tr>
+                  <td class="py-3">
+                    <div class="d-flex align-items-center gap-2">
+                      <div class="image">
+                        <img src="images/transactions-icon.png" alt="" />
+                      </div>
+                      <p><b>DigitalOcean </b><br />Declined · Today</p>
                     </div>
-                 </div>
-                 <div class="d-flex justify-content-between mt-3">
-                     <h3 class="mb-3">Transactions</h3>
-                    <a href="" class="underline">See all</a>
-                 </div>
-               <table class="w-100"> 
-                <tbody>
-                    <tr >
-                        <td class="py-3">
-                            <div class="d-flex align-items-center gap-2">
-                                <div class="image">
-                                    <img src="images/transactions-icon.png" alt="">
-                                </div>
-                                <p> <b>DigitalOcean </b><br>Declined · Today</p>
-                            </div>
-                           
-                        </td>
-                        <td class="text-end py-3"><b>5 USD</b></td>
-                    </tr>
-                    <tr >
-                        <td class="py-3">
-                            <div class="d-flex align-items-center gap-2">
-                                <div class="image">
-                                    <img src="images/transactions-icon.png" alt="">
-                                </div>
-                                <p> <b>DigitalOcean </b><br>Declined · Today</p>
-                            </div>
-                           
-                        </td>
-                        <td class="text-end py-3"><b>5 USD</b></td>
-                    </tr>
-                    <tr >
-                        <td class="py-3">
-                            <div class="d-flex align-items-center gap-2">
-                                <div class="image">
-                                    <img src="images/transactions-icon.png" alt="">
-                                </div>
-                                <p> <b>DigitalOcean </b><br>Declined · Today</p>
-                            </div>
-                           
-                        </td>
-                        <td class="text-end py-3"><b>5 USD</b></td>
-                    </tr>
-              
-                </tbody>
-               </table>
-               <h3 class="mb-3 mt-2">Transfer calculator</h3>
-               <div class="calculator-box">
-                <h3 class="mb-3">1 GBP = 1.3125 USD</h3>
-                <div class="calculator-box-items mb-5">
-                    <div class="item w-100">
-                        <img class="img-fluid" src="images/calculator-image.png" alt="">
-                    </div>
-                    <div class="item w-100">
-                        <div class="currency-box w-100 mb-3">
-                             <input class="form-control input" type="text" placeholder="1000.00">
-                            <div class="currency">
-                              <form action="">
-                                <div class="mb-4">                      
-                                    <select class=" select " name="" id="">
-                                        <option value="">GBP</option>
-                                        <option value="">GBP</option>
-                                        <option value="">GBP</option>
-                                        <option value="">GBP</option>
-                                    </select>
-                                </div>
-                              </form>
-                            </div>
-                          </div>
-                        <div class="currency-box w-100 mb-3">
-                             <input class="form-control input" type="text" placeholder="1000.00">
-                            <div class="currency">
-                              <form action="">
-                                <div class="mb-4">                      
-                                    <select class=" select " name="" id="">
-                                        <option value="">GBP</option>
-                                        <option value="">GBP</option>
-                                        <option value="">GBP</option>
-                                        <option value="">GBP</option>
-                                    </select>
-                                </div>
-                              </form>
-                            </div>
-                          </div>
-                 
-                        <div class="fee-box w-100 mb-3">
-                            <div class="icon">
-                                <img src="images/updown-arrow-icon.png" alt="">
-                            </div>
-                              <p>Transfer fee <img src="images/qustion-mark-icon.png" alt=""> <br>
-                               <b>4.45 GBP</b>
-                            </p> 
-                        </div>
-                          <button class="btn btn-primary w-100">Send</button>
-                    </div>
+                  </td>
+                  <td class="text-end py-3"><b>5 USD</b></td>
+                </tr>
+              </tbody>
+            </table>
+            <h3 class="mb-3 mt-2">Transfer calculator</h3>
+            <div class="calculator-box">
+              <h3 class="mb-3">1 GBP = 1.3125 USD</h3>
+              <div class="calculator-box-items mb-5">
+                <div class="item w-100">
+                  <img
+                    class="img-fluid"
+                    src="images/calculator-image.png"
+                    alt=""
+                  />
                 </div>
-                <div class="calculator-bottom mb-5 pb-5">
-                    <div class="d-flex justify-content-between align-items-center mb-3">                       
-                        <div class="item d-flex justify-content-center align-items-center gap-2">
-                            <div class="icon">
-                                <img src="images/bel-dubble-icon.png" alt="">
-                            </div>
-                            <b>Get exchange rate updates</b>
+                <div class="item w-100">
+                  <div class="currency-box w-100 mb-3">
+                    <input
+                      class="form-control input"
+                      type="text"
+                      placeholder="1000.00"
+                    />
+                    <div class="currency">
+                      <form action="">
+                        <div class="mb-4">
+                          <select class="select" name="" id="">
+                            <option value="">GBP</option>
+                            <option value="">GBP</option>
+                            <option value="">GBP</option>
+                            <option value="">GBP</option>
+                          </select>
                         </div>
-                        <img src="images/right-icon.png" alt="">
+                      </form>
                     </div>
-                    <div class="d-flex justify-content-between align-items-center ">                       
-                        <div class="item d-flex justify-content-center align-items-center gap-2">
-                            <div class="icon">
-                                <img src="images/message-icon.png" alt="">
-                            </div>
-                            <b>Give us feedback</b>
+                  </div>
+                  <div class="currency-box w-100 mb-3">
+                    <input
+                      class="form-control input"
+                      type="text"
+                      placeholder="1000.00"
+                    />
+                    <div class="currency">
+                      <form action="">
+                        <div class="mb-4">
+                          <select class="select" name="" id="">
+                            <option value="">GBP</option>
+                            <option value="">GBP</option>
+                            <option value="">GBP</option>
+                            <option value="">GBP</option>
+                          </select>
                         </div>
-                        <img src="images/right-icon.png" alt="">
+                      </form>
                     </div>
-                </div>
-               </div>
+                  </div>
 
-             </div>
-               
+                  <div class="fee-box w-100 mb-3">
+                    <div class="icon">
+                      <img src="images/updown-arrow-icon.png" alt="" />
+                    </div>
+                    <p>
+                      Transfer fee
+                      <img src="images/qustion-mark-icon.png" alt="" /> <br />
+                      <b>4.45 GBP</b>
+                    </p>
+                  </div>
+                  <button class="btn btn-primary w-100">Send</button>
+                </div>
+              </div>
+              <div class="calculator-bottom mb-5 pb-5">
+                <div
+                  class="d-flex justify-content-between align-items-center mb-3"
+                >
+                  <div
+                    class="item d-flex justify-content-center align-items-center gap-2"
+                  >
+                    <div class="icon">
+                      <img src="images/bel-dubble-icon.png" alt="" />
+                    </div>
+                    <b>Get exchange rate updates</b>
+                  </div>
+                  <img src="images/right-icon.png" alt="" />
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div
+                    class="item d-flex justify-content-center align-items-center gap-2"
+                  >
+                    <div class="icon">
+                      <img src="images/message-icon.png" alt="" />
+                    </div>
+                    <b>Give us feedback</b>
+                  </div>
+                  <img src="images/right-icon.png" alt="" />
+                </div>
+              </div>
             </div>
-    </div>
-<!-- Modal -->
-<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header border-0">
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body text-center">
-          <h4 class="mb-2">Open a balance</h4>
-          <form action="">
-            <div class="mb-4">                      
-                <select class="w-100 select" name="" id="">
-                    <option value="">Australian dollar</option>
-                    <option value="">Australian dollar</option>
-                    <option value="">Australian dollar</option>
-                    <option value="">Australian dollar</option>
-                </select>
-            </div>
-          </form>
-     
-          <p class="mt-2 mb-5">You can open balances in 20+ currencies.</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-primary w-100">Confirm</button>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-<!-- Modal -->
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="staticBackdrop"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header border-0">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body text-center">
+            <h4 class="mb-2">Open a balance</h4>
+            <form action="">
+              <div class="mb-4">
+                <select class="w-100 select" name="" id="">
+                  <option value="">Australian dollar</option>
+                  <option value="">Australian dollar</option>
+                  <option value="">Australian dollar</option>
+                  <option value="">Australian dollar</option>
+                </select>
+              </div>
+            </form>
+
+            <p class="mt-2 mb-5">You can open balances in 20+ currencies.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary w-100">Confirm</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal -->
     <!-- jquery -->
     <script src="plugins/jquery/jquery.min.js"></script>
     <!--Bootstrap  -->
     <script src="plugins/bootstrap/bootstrap.bundle.min.js"></script>
     <!--  -->
     <script src="js//script.js"></script>
-</body>
-
+  </body>
 </html>
