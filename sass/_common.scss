@@ -40,7 +40,9 @@ button {
     outline: 0;
     box-shadow: none;
 }
-
+.fild-bg{
+    background: $fild-color;
+}
 .btn-primary {
     background-color: $primary-bg;
     color: $primary-color;
