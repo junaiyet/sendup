@@ -190,6 +190,9 @@
             color: $primary-color;    
     }
 }
+.account-details-main-content{
+    display: flex;
+}
 .account-details-nav-tab{
     .nav-link{
        color: $primary-color;
@@ -203,10 +206,32 @@
     .account-details-nav-tab-item{
         border-radius: 24px;
         margin-top: 20px;
-        padding: 100px;
+        padding: 24px 32px;
         background-color: $box-color;
+        .country-logo{
+            width: 24px;
+        }
     }
 }
+.account-details-items{
+    .account-details-item{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        gap: 10px;
+        .image{
+            min-width: 48px;
+            height: 48px;
+            background-color: $fild-color;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
 .search{
     position: relative;
     width: 100%;
@@ -259,6 +284,15 @@
          flex-direction: column;
         }
     } 
+    .account-details-main-content{
+        flex-direction: column;
+    }
+    .account-details-items{
+        width: 100%;
+    }
+    .account-details-nav-tab{
+        width: 100%;
+    }
 }
 @include mobile{
     .dasboard-main-content{
