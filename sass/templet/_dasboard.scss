@@ -25,8 +25,17 @@
         margin-top: 60px;
         margin-bottom: 90px;
         display: flex;
-        justify-content: end;
+        justify-content: space-between;
         align-items: end;
+        .top-nav-icon .icon{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background-color: $fild-color;
+        }
         .nav-link{
             font-weight: 600;
         }
@@ -117,62 +126,62 @@
         border-radius: 16px;
     }
 
-      .fee-box{
-        border: 1px solid $border-color;
-        border-radius: 16px;
-        padding: 9px;
-        position: relative;
+    .fee-box{
+    border: 1px solid $border-color;
+    border-radius: 16px;
+    padding: 9px;
+    position: relative;
+    text-align: center;
+    .icon{
+        position: absolute;
+        left: 0;
+        top: -15px;
+        border-radius: 50%;
         text-align: center;
-        .icon{
-            position: absolute;
-            left: 0;
-            top: -15px;
-            border-radius: 50%;
-            text-align: center;
-            width: 32px;
-            height: 32px;
-            background-color: $fild-color;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-      }
-      .calculator-bottom{
-        .icon{
-            width: 48px;
-            height: 48px;
-            border-radius: 50%;
-            background-color: $fild-color;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-      }
-      .doted-icon{
-        .dropdown-menu{
-                transform: translate(-90% ,27px) !important;
-                width: 176px;
-        }
-      }
-      .acc-details{
+        width: 32px;
+        height: 32px;
+        background-color: $fild-color;
         display: flex;
-        justify-content: space-between;
-        align-items: end;
-        .icon{
+        justify-content: center;
+        align-items: center;
+    }
+    }
+    .calculator-bottom{
+    .icon{
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        background-color: $fild-color;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    }
+    .doted-icon{
+    .dropdown-menu{
+            transform: translate(-90% ,27px) !important;
+            width: 176px;
+    }
+    }
+    .acc-details{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    .icon{
+        display: flex;
+        gap: 20px;
+        .image{
+            background-color: $primary-bg;
+            width: 56px;
+            height: 56px;
+            border-radius: 28px;
             display: flex;
-            gap: 20px;
-            .image{
-                background-color: $primary-bg;
-                width: 56px;
-                height: 56px;
-                border-radius: 28px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
+            justify-content: center;
+            align-items: center;
 
-            }
         }
-      }
+    }
+    }
     .acc-navTab{
         .nav{
             background-color: $fild-color;
@@ -189,68 +198,73 @@
             background: $white;
             color: $primary-color;    
     }
-}
-.account-details-main-content{
-    display: flex;
-}
-.account-details-nav-tab{
-    .nav-link{
-       color: $primary-color;
     }
-    .nav-link.active {
-        border: 0;
-       border-bottom: 3px solid $primary-color;
-       color: $primary-color;
-       font-weight: 600;
-    }
-    .account-details-nav-tab-item{
-        border-radius: 24px;
-        margin-top: 20px;
-        padding: 24px 32px;
-        background-color: $box-color;
-        .country-logo{
-            width: 24px;
-        }
-    }
-}
-.account-details-items{
-    .account-details-item{
+    .account-details-main-content{
         display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin-bottom: 10px;
-        gap: 10px;
-        .image{
-            min-width: 48px;
-            height: 48px;
-            background-color: $fild-color;
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+    }
+    .account-details-nav-tab{
+        .nav-link{
+        color: $primary-color;
+        }
+        .nav-link.active {
+            border: 0;
+        border-bottom: 3px solid $primary-color;
+        color: $primary-color;
+        font-weight: 600;
+        }
+        .account-details-nav-tab-item{
+            border-radius: 24px;
+            margin-top: 20px;
+            padding: 24px 32px;
+            background-color: $box-color;
+            .country-logo{
+                width: 24px;
+            }
         }
     }
-}
-
-.search{
-    position: relative;
-    width: 100%;
-    .image{
-        position: absolute;
-        left: 10px;
-        top: 50%;
-        transform: translateY(-50%);
+    .account-details-items{
+        .account-details-item{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            gap: 10px;
+            .image{
+                min-width: 48px;
+                height: 48px;
+                background-color: $fild-color;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
     }
-    input{
-        border-radius: 24px;
-    }
-    .form-control:focus ~ .image img {
-       opacity: 0;
-    }
-    &:focus-within .image img {
+    .search{
+        position: relative;
+        width: 100%;
+        .image{
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        input{
+            border-radius: 24px;
+        }
+        .form-control:focus ~ .image img {
         opacity: 0;
+        }
+        &:focus-within .image img {
+            opacity: 0;
+        }
     }
-}
+    .search-paddign{
+        input{
+            padding-left: 30px;
+
+        }
+    }
 }
 .currency-box {
     display: flex;

@@ -1,0 +1,63 @@
+.dasboard{
+    .recipient-nav{
+        margin-bottom: 87px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        .active{
+            font-weight: 600;
+        }
+        &::after{
+            content: '';
+            position: absolute;
+            left: 20px;
+            top: -10px;
+            width: 90%;
+            height: 4px;
+            background-color: $border-color;
+            border-radius: 8px;
+        }
+
+    }
+
+    .recipent-items{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 30px;
+        .icons{
+            position: relative;
+            .img{
+                width: 48px;
+                height: 48px;
+                background-color: $fild-color;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+             }
+             .icon{
+                width: 14px;
+                height: 14px;
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                img{
+                    width: 100%;
+                }
+             }
+             &::after{
+                content: '';
+                position: absolute;
+                left: -4px;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                background: $white;
+             }
+        }
+    }
+}
