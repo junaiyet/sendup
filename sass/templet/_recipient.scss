@@ -60,4 +60,20 @@
              }
         }
     }
+    .btnk-details-nav-tab{
+        .nav-link{
+            border: 0;
+            color: $text-color;
+        }
+        .nav-item{
+            display: flex;
+            justify-content: center;
+            width: 50%;
+        }
+        .nav-link.active{
+             width: 100%;
+             color: $primary-color;
+            border-bottom: 2px solid $primary-color;
+        }
+    }
 }

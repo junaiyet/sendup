@@ -43,6 +43,13 @@ button {
 .fild-bg{
     background: $fild-color;
 }
+.icon-rounded{
+min-width: 48px;
+height: 48px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
 .btn-primary {
     background-color: $primary-bg;
     color: $primary-color;

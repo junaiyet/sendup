@@ -1,0 +1,155 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sendup</title>
+    <!-- ** Plugins Needed for the Project ** -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+    <!-- style.css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="dasboard-body">
+    <div class="d-flex align-items-start dasboard">
+      <div class="bar-section w-100 fild-bg justify-content-between position-fixed p-4">
+        <a class="" href="#">
+          <img src="images/logo-dasboard.png" alt="" />
+        </a>
+        <div id="open-navbar">
+          <img src="images/bar-icon.png" alt="">
+        </div>
+      </div>
+      <div id="dasboard-navigation" class="dasboard-navigation">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid flex-column">
+            <a class="navbar-brand sm-d-flex justify-content-between align-items-center gap-3" href="#">
+              <img src="images/logo-dasboard.png" alt="" />
+              <button
+                id="close-navbar"
+                class="navbar-toggler rounded-circle p-2"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <img src="images/default-cross.png" alt="">
+              </button>
+            </a>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 flex-column">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  ><img src="images/home-active-icon.png" alt="" />Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><img src="images/card-icon.png" alt="" />Card</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><img
+                    src="images/recipients-icon.png"
+                    alt=""
+                  />Recipients</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><img src="images/payments-icon.png" alt="" />Payments</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><img src="images/earn-icon.png" alt="" />Earn £75
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+            <div class="dasboard-content ">
+              <div class="container">
+                <div class="top-nav">
+                 <div class="top-nav-icon">
+                   <a class="icon">
+                     <img src="images/left-arrow-icon.png" alt="">
+                   </a>
+                 </div>
+                   <ul class="d-flex gap-3">
+                       <li class="nav-item">
+                           <a class="nav-link" href="#"><img class="image-radious" src="images/bel-icon.png" alt=""></a>
+                         </li>
+                       <li class="nav-item">
+                           <a class="nav-link" href="#"><img class="image-radious" src="images/network-icon.png" alt=""></a>
+                         </li>
+                       <li class="nav-item dropdown">
+                           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                               <img class="image-radious" src="images/profile-imgae.png" alt="">   User Name
+                           </a>
+                           <ul class="dropdown-menu p-3">
+                           <li><a class="dropdown-item nav-link mb-2" href="#">Create invoice</a></li>
+                           <li><a class="dropdown-item nav-link" href="#">Share payment link </a></li>
+                    
+                           </ul>
+                       </li>
+                   </ul>
+                </div>
+                <div class="dasboard-main-content">
+                 <div class="col-md-5 mx-auto">
+                   <ul class="recipient-nav">
+                    <li class="active">Recipient</li>
+                    <li>Amount</li>
+                    <li>Review</li>
+                    <li>Pay</li>
+                   </ul>
+                   <h3 class="text-center mb-4">Add a recipient</h3> 
+                <!--  -->
+                    <form action=" " class="w-100 filter-area d-flex gap-2 mb-5">
+                     <div class="search search-paddign">
+                       <div class="image">
+                         <img src="images/search-icon.png" alt="">
+                       </div>
+                       <input class="form-control" type="text" placeholder="@Senduptag, email, phone ">
+                     </div>
+                     <button class="btn btn-sm  rounded-pill border  py-2 px-3">Search</button>
+                   </form> 
+                <!--  -->
+                <!--  -->
+                <div class="border rounded-4 p-3 d-flex align-items-start">
+                 <div class="d-flex align-items-center gap-2">
+                   <div class="image">
+                     <img src="images/color-search-icon.png" alt="">
+                   </div>
+                   <p>Use a plus (+) sign and country code for
+                     phone numbers. You can't find businesses or
+                     people who keep details hidden.</p>
+                 </div>
+                   <div class="icon fild-bg rounded-circle p-2">
+                     <img src="images/default-cross.png" alt="">
+                   </div>
+                </div>
+                
+                <!--  -->
+             
+                 </div>
+   
+                </div>              
+
+              </div>
+            </div>
+    </div>
+
+    <!-- jquery -->
+    <script src="plugins/jquery/jquery.min.js"></script>
+    <!--Bootstrap  -->
+    <script src="plugins/bootstrap/bootstrap.bundle.min.js"></script>
+    <!--  -->
+    <script src="js//script.js"></script>
+</body>
+
+</html>

@@ -1,7 +1,24 @@
 
 
+.dasboard-body{
+    background-color:$fild-color;
+}
+// .dasboard-navigation{
+//     background-color: black;
+// }
+// .dashboard-main-bg{
+// background: pink;
+// }
+.dasboard-content{
+    background-color: $white;
+    padding-left: 40px;
+    height: 100%;
+    min-height: 100vh;
+    width: 100%;
+}
 .dasboard{
-    gap: 40px;
+    // gap: 40px;
+    // padding-left: 40px;
     .dasboard-navigation{
         background-color:$fild-color;
         height: 100vh;
@@ -47,6 +64,7 @@
     }
     .dasboard-main-content{
         margin-right: 150px;
+        // background-color: $white;
     }
 
     .btn-primary-light-sm{
@@ -295,6 +313,9 @@
   }
 
 @include mobile{
+    .dasboard-content{
+        padding-left: 20px;
+    }
     .dasboard{
         .dasboard-main-content {
             margin-right: 20px;
