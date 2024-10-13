@@ -13,32 +13,65 @@
 
 <body class="dasboard-body">
     <div class="d-flex align-items-start dasboard">
-        <div class="dasboard-navigation">
-            <nav class="navbar navbar-expand-lg ">
-                <div class="container-fluid flex-column">
-                  <a class="navbar-brand" href="#">
-                    <img src="images/logo-dasboard.png" alt="">
-                  </a>
-                  <ul class="navbar-nav me-auto mb-2 mb-lg-0 flex-column">
-                    <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="#"><img src="images/home-active-icon.png" alt="">Home</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#"><img src="images/card-icon.png" alt="">Card</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#"><img src="images/recipients-icon.png" alt="">Recipients</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#"><img src="images/payments-icon.png" alt="">Payments</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#"><img src="images/earn-icon.png" alt="">Earn £75 </a>
-                    </li>
-                  </ul>
-                </div>
-              </nav>
+      <div class="bar-section w-100 fild-bg justify-content-between position-fixed p-4">
+        <a class="" href="#">
+          <img src="images/logo-dasboard.png" alt="" />
+        </a>
+        <div id="open-navbar">
+          <img src="images/bar-icon.png" alt="">
         </div>
+      </div>
+      <div id="dasboard-navigation" class="dasboard-navigation">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid flex-column">
+            <a class="navbar-brand sm-d-flex justify-content-between align-items-center gap-3" href="#">
+              <img src="images/logo-dasboard.png" alt="" />
+              <button
+                id="close-navbar"
+                class="navbar-toggler rounded-circle p-2"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <img src="images/default-cross.png" alt="">
+              </button>
+            </a>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 flex-column">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  ><img src="images/home-active-icon.png" alt="" />Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><img src="images/card-icon.png" alt="" />Card</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><img
+                    src="images/recipients-icon.png"
+                    alt=""
+                  />Recipients</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><img src="images/payments-icon.png" alt="" />Payments</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><img src="images/earn-icon.png" alt="" />Earn £75
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
             <div class="dasboard-content container">
              <div class="top-nav">
               <div class="top-nav-icon">

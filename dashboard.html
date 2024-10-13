@@ -8,47 +8,38 @@
     <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css" />
     <!-- style.css -->
     <link rel="stylesheet" href="css/style.css" />
-    <style>
-      .dasboard-navigation {
-        background-color: #f8f9fa;
-        position: fixed;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        z-index: 1;
-        transform: translateX(-100%);
-        transition: 0.3s;
-        width: 250px;
-        min-height: 100vh;
-      }
-      .navigation-open {
-        transform: translateX(0);
-      }
-    </style>
+  
   </head>
 
   <body class="dasboard-body">
     <div class="relative">
       <div class="d-flex align-items-start dasboard">
-        <div id="open-navbar">X</div>
+        <div class="bar-section w-100 fild-bg justify-content-between position-fixed p-4">
+          <a class="" href="#">
+            <img src="images/logo-dasboard.png" alt="" />
+          </a>
+          <div id="open-navbar">
+            <img src="images/bar-icon.png" alt="">
+          </div>
+        </div>
         <div id="dasboard-navigation" class="dasboard-navigation">
           <nav class="navbar navbar-expand-lg">
             <div class="container-fluid flex-column">
-              <a class="navbar-brand" href="#">
+              <a class="navbar-brand sm-d-flex justify-content-between align-items-center gap-3" href="#">
                 <img src="images/logo-dasboard.png" alt="" />
+                <button
+                  id="close-navbar"
+                  class="navbar-toggler rounded-circle p-2"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarNav"
+                  aria-controls="navbarNav"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <img src="images/default-cross.png" alt="">
+                </button>
               </a>
-              <button
-                id="close-navbar"
-                class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarNav"
-                aria-controls="navbarNav"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-              >
-                X
-              </button>
               <ul class="navbar-nav me-auto mb-2 mb-lg-0 flex-column">
                 <li class="nav-item">
                   <a class="nav-link active" aria-current="page" href="#"

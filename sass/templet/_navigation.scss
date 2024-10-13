@@ -20,14 +20,6 @@
         }
     }
 }
-
-
-@include mobile{
-    .navigation{
-            padding: 15px;
-    }
-}
-
 .account-step-items{
     border-top: 2px solid $border-color;
     position: relative;
@@ -78,4 +70,50 @@
     &::before{
         left: 100%;
     }  
+
+}
+.bar-section{
+    display: none !important;
+}
+
+
+@include mobile{
+    .navigation{
+            padding: 15px;
+    }
+}
+
+
+
+
+@include mobile{
+    .bar-section{
+        display: flex !important;
+    }
+    .top-nav{
+        margin-top: 100px !important;
+    }
+    .dasboard {
+        gap: 0;
+    }
+    
+    .dasboard-navigation {
+    padding: 20px !important;
+    background-color: #f8f9fa;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    transform: translateX(-100%);
+    transition: 0.3s;
+    width: 250px;
+    min-height: 100vh;
+  }
+  .navigation-open {
+    transform: translateX(0);
+  }
+  .dasboard .navbar .navbar-brand {
+    margin-bottom: 30px !important;
+}
 }
