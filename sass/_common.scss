@@ -43,6 +43,9 @@ button {
 .text-primary{
     color: $primary-color !important;
 }
+.bg-primary{
+    background: $primary-bg !important;
+}
 .fild-bg{
     background: $fild-color;
 }
@@ -55,11 +58,19 @@ button {
     margin-bottom: 5px;
 }
 .icon-rounded{
+    width: 48px;
 min-width: 48px;
 height: 48px;
 display: flex;
 justify-content: center;
 align-items: center;
+}
+.cursor{
+    cursor: pointer;
+}
+.form-check-input:checked {
+    background-color: $primary-color !important;
+    border-color: $primary-color !important;
 }
 .btn-primary {
     background-color: $primary-bg;

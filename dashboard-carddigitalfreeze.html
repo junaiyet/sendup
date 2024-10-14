@@ -1,0 +1,477 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sendup</title>
+    <!-- ** Plugins Needed for the Project ** -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+    <!-- style.css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="dasboard-body">
+    <div class="d-flex align-items-start dasboard">
+      <div class="bar-section w-100 fild-bg justify-content-between position-fixed p-4 z-1">
+        <a class="" href="#">
+          <img src="images/logo-dasboard.png" alt="" />
+        </a>
+        <div id="open-navbar">
+          <img src="images/bar-icon.png" alt="">
+        </div>
+      </div>
+      <div id="dasboard-navigation" class="dasboard-navigation">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid flex-column">
+            <a class="navbar-brand sm-d-flex justify-content-between align-items-center gap-3" href="#">
+              <img src="images/logo-dasboard.png" alt="" />
+              <button
+                id="close-navbar"
+                class="navbar-toggler rounded-circle p-2"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <img src="images/default-cross.png" alt="">
+              </button>
+            </a>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 flex-column">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  ><img src="images/home-active-icon.png" alt="" />Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><img src="images/card-icon.png" alt="" />Card</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><img
+                    src="images/recipients-icon.png"
+                    alt=""
+                  />Recipients</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><img src="images/payments-icon.png" alt="" />Payments</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><img src="images/earn-icon.png" alt="" />Earn £75
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="dasboard-content ">
+        <div class="container">
+          <div class="top-nav">
+          <div class="top-nav-icon">
+            <a class="icon">
+              <img src="images/left-arrow-icon.png" alt="">
+            </a>
+          </div>
+            <ul class="d-flex gap-3">
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><img class="image-radious" src="images/bel-icon.png" alt=""></a>
+                  </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><img class="image-radious" src="images/network-icon.png" alt=""></a>
+                  </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img class="image-radious" src="images/profile-imgae.png" alt="">   User Name
+                    </a>
+                    <ul class="dropdown-menu p-3">
+                    <li><a class="dropdown-item nav-link mb-2" href="#">Create invoice</a></li>
+                    <li><a class="dropdown-item nav-link" href="#">Share payment link </a></li>
+              
+                    </ul>
+                </li>
+            </ul>
+          </div>
+          <div class="dasboard-main-content card-main-content">
+          <div class="col-lg-12 col-xxl-8 col-sm-12 ">
+               <div >
+                <h3>Digital card</h3>
+                <p>•••• 9364</p>
+                 <!--  -->
+                <div>
+               <!--  -->
+                      <div class="d-sm-flex align-items-center gap-5 mt-4">
+                        <div class="me-md-5 freeze-card">
+                          <img class="img-fluid" src="images/digital-card-two.png" alt="">
+                          <div class="icon-bg">
+                            <div class="icon d-flex justify-content-center align-items-center h-100">
+                              <div class="icon-rounded bg-dark rounded-circle">
+                                <img class="" src="images/freeze-light-icon.png" alt="">
+                              </div>
+                            </div>
+
+                          </div>
+                        </div>
+                        <!--  -->
+                        <div class="mt-4 mt-sm-0">
+                            <div class="d-flex gap-5 ">
+                              <div class="icon-rounded bg-primary rounded-circle cursor"  data-bs-toggle="modal" data-bs-target="#show-pin">
+                                <img src="images/show-pin-icon.png" alt="">
+                              </div>
+                              <div class="icon-rounded bg-primary rounded-circle cursor" data-bs-toggle="modal" data-bs-target="#card-details">
+                                <img src="images/card-details-icon.png" alt="">
+                              </div>
+                              <a class="icon-rounded bg-primary rounded-circle">
+                                <img src="images/freeze-drak-icon.png" alt="">
+                              </a>
+                            </div>
+                        </div>
+                        <!--  -->
+                      </div>
+                 <!--  -->
+                      <div>
+                        <p class="border-bottom mb-4 pb-2 mt-4">Manage card</p>
+                        <ul>
+                          <li class="mb-4">
+                            <a href="" class="d-flex justify-content-between align-items-center">
+                              <div class="d-flex align-items-center gap-2">
+                                <div class="icon-rounded fild-bg rounded-circle">
+                                  <img src="images/three-dot-icon.png" alt="">
+                                </div>
+                                <div >
+                                  <p><b>View recent card transactions</b></p>
+                                </div>
+                              </div>
+                              <div class="">
+                                <img src="images/right-icon.png" alt="">
+                              </div>
+                            </a>
+                          </li>
+                          <li class="mb-4">
+                            <div  class="d-flex justify-content-between align-items-center cursor" data-bs-toggle="modal" data-bs-target="#unblock-pin">
+                              <div class="d-flex align-items-center gap-2">
+                                <div class="icon-rounded fild-bg rounded-circle">
+                                  <img src="images/unblock-pin-icon.png" alt="">
+                                </div>
+                                <div >
+                                  <p><b>Unblock PIN</b></p>
+                                </div>
+                              </div>
+                              <div class="">
+                                <img src="images/right-icon.png" alt="">
+                              </div>
+                            </div>
+                          </li>
+                          <li class="mb-4">
+                            <div  class="d-flex justify-content-between align-items-center cursor" data-bs-toggle="modal" data-bs-target="#payment-methods">
+                              <div class="d-flex align-items-center gap-2">
+                                <div class="icon-rounded fild-bg rounded-circle">
+                                  <img src="images/setting-icon.png" alt="">
+                                </div>
+                                <div >
+                                  <p><b>Manage payment methods</b></p>
+                                </div>
+                              </div>
+                              <div class="">
+                                <img src="images/right-icon.png" alt="">
+                              </div>
+                            </div>
+                          </li>
+                          <li class="mb-4">
+                            <div  class="d-flex justify-content-between align-items-center cursor" data-bs-toggle="modal" data-bs-target="#edit-card" >
+                              <div class="d-flex align-items-center gap-2">
+                                <div class="icon-rounded fild-bg rounded-circle">
+                                  <img src="images/edit-icon.png" alt="">
+                                </div>
+                                <div >
+                                  <p><b>Edit card</b></p>
+                                </div>
+                              </div>
+                              <div class="">
+                                <img src="images/right-icon.png" alt="">
+                              </div>
+                            </div>
+                          </li>
+                          <li class="mb-4">
+                            <div class="d-flex justify-content-between align-items-center cursor" data-bs-toggle="modal" data-bs-target="#replace-card" >
+                              <div class="d-flex align-items-center gap-2">
+                                <div class="icon-rounded fild-bg rounded-circle">
+                                  <img src="images/card-small-icon.png" alt="">
+                                </div>
+                                <div >
+                                  <p><b>Replace card</b></p>
+                                </div>
+                              </div>
+                              <div class="">
+                                <img src="images/right-icon.png" alt="">
+                              </div>
+                            </div>
+                          </li>
+                          <li class="mb-4">
+                            <div class="d-flex justify-content-between align-items-center cursor " data-bs-toggle="modal" data-bs-target="#delete-card">
+                              <div class="d-flex align-items-center gap-2">
+                                <div class="icon-rounded fild-bg rounded-circle">
+                                  <img src="images/delete-icon.png" alt="">
+                                </div>
+                                <div >
+                                  <p><b>Delete card</b></p>
+                                </div>
+                              </div>
+                              <div class="">
+                                <img src="images/right-icon.png" alt="">
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                </div>
+               </div>
+            <div>
+       
+            </div>
+
+   
+          </div>
+  
+          </div>              
+
+        </div>
+      </div>
+    </div>
+ <!--show-pin Modal -->
+ <div class="modal fade" id="show-pin" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="show-pinLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header border-0">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-center">
+        <h5 class="mb-2">Your card is ready</h5>
+        <p>Start spending online and in-store with Apple Pay or Google Pay..</p>
+        <div class="image">
+          <img src="images/ready-card-img.png" alt="">
+        </div>
+      </div>
+      <div class="modal-footer justify-content-center">
+        <button type="button" class="btn btn-primary w-100">View Card</button>
+     
+      </div>
+    </div>
+  </div>
+</div>
+<!--show-pin Modal -->
+ <!--card-details Modal -->
+ <div class="modal fade" id="card-details" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="card-detailsLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header ">
+        <h5 class="modal-title">Here's your PIN</h5>
+
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body ">
+        <h5 class="mb-2 text-center">Enter your password to show your card details</h5>
+        <p class="mb-3 text-center">This is a security check to keep your account safe.</p>
+        <form action=""  >
+          <div class="mb-3 password position-relative">
+            <label for="" class="paragraph">Your password</label>
+            <input class="form-control input" type="password">
+            <img class="eye-icon position-absolute" src="images/eye-icon.png" alt="">
+        </div>
+        </form>
+      </div>
+      <div class="modal-footer justify-content-center">
+        <button type="button" class="btn btn-primary w-100">Done</button>
+        <a href="#" class="underline  d-inline-block">Forgot Password?</a>
+     
+      </div>
+    </div>
+  </div>
+</div>
+<!--card-details Modal -->
+ <!--unblock-pin Modal -->
+ <div class="modal fade" id="unblock-pin" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="unblock-pinLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header ">
+        <h5 class="modal-title">Unblock your PIN</h5>
+
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body ">
+        <p class="mb-3 text-center">If you enter the wrong PIN 3 times, your PIN gets blocked and your card
+          won't work.</p>
+
+      </div>
+      <div class="modal-footer justify-content-center">
+        <button type="button" class="btn btn-primary w-100">Unblock PIN</button>
+
+     
+      </div>
+    </div>
+  </div>
+</div>
+<!--unblock-pin Modal -->
+ <!--payment-methods Modal -->
+ <div class="modal fade" id="payment-methods" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="payment-methodsLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header ">
+        <h5 class="modal-title">Payment methods</h5>
+
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body ">
+         <div>
+          <div class="d-flex justify-content-between align-items-center mb-3">
+             <div class="d-flex align-items-center gap-2">
+              <div class="icon-rounded fild-bg rounded-circle">
+                <img src="images/atm-icon.png" alt="">
+              </div>
+              <p><b>ATM withdrawals</b></p>
+             </div>
+             <div class="">
+              <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+
+              </div>
+             </div>
+          </div>
+          <div class="d-flex justify-content-between align-items-center mb-3">
+             <div class="d-flex align-items-center gap-2">
+              <div class="icon-rounded fild-bg rounded-circle">
+                <img src="images/lock-icon.png" alt="">
+              </div>
+              <p><b>Online payments</b></p>
+             </div>
+             <div class="">
+              <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+
+              </div>
+             </div>
+          </div>
+          <div class="d-flex justify-content-between align-items-center mb-3">
+             <div class="d-flex align-items-center gap-2">
+              <div class="icon-rounded fild-bg rounded-circle">
+                <img src="images/chip-icon.png" alt="">
+              </div>
+              <p><b>Chip and PIN transactions/b></p>
+             </div>
+             <div class="">
+              <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+
+              </div>
+             </div>
+          </div>
+          <div class="d-flex justify-content-between align-items-center mb-3">
+             <div class="d-flex align-items-center gap-2">
+              <div class="icon-rounded fild-bg rounded-circle">
+                <img src="images/mobile-icon.png" alt="">
+              </div>
+              <p><b>Mobile wallets</b></p>
+             </div>
+             <div class="">
+              <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+
+              </div>
+             </div>
+          </div>
+         </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+<!--payment-methods Modal -->
+ <!--edit-card Modal -->
+ <div class="modal fade" id="edit-card" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="edit-cardLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header ">
+        <h5 class="modal-title">Edit your card</h5>
+
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body ">
+        <form action="">
+          <div class="mb-3">
+            <label for="" class="form-label"><b>Card label</b>(Option)</label>
+            <input class="form-control input" type="text">
+          </div>
+        </form>
+
+      </div>
+      <div class="modal-footer justify-content-center">
+        <button type="button" class="btn btn-primary w-100">Confirm</button>
+
+     
+      </div>
+    </div>
+  </div>
+</div>
+<!--edit-card Modal -->
+ <!--replace-card Modal -->
+ <div class="modal fade" id="replace-card" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="replace-cardLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header ">
+        <h5 class="modal-title">Unblock your PIN</h5>
+
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body ">
+        <p class="mb-3 text-center">Your old card will stop working when you order a new one.</p>
+
+      </div>
+      <div class="modal-footer justify-content-center">
+        <button type="button" class="btn btn-primary w-100">Replace card</button>
+
+     
+      </div>
+    </div>
+  </div>
+</div>
+<!--replace-card Modal -->
+ <!--delete-card Modal -->
+ <div class="modal fade" id="delete-card" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="delete-cardLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header ">
+        <h5 class="modal-title">Delete card</h5>
+
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body ">
+        <p class="mb-3 text-center">You can't undo this.</p>
+
+      </div>
+      <div class="modal-footer justify-content-center">
+        <button type="button" class="btn btn-danger w-100 rounded-5">Delete card</button>
+        <button type="button" class="btn btn-light w-100 rounded-5 border bg-transparent">cancle</button>
+
+     
+      </div>
+    </div>
+  </div>
+</div>
+<!--delete-card Modal -->
+    <!-- jquery -->
+    <script src="plugins/jquery/jquery.min.js"></script>
+    <!--Bootstrap  -->
+    <script src="plugins/bootstrap/bootstrap.bundle.min.js"></script>
+    <!--  -->
+    <script src="js//script.js"></script>
+</body>
+
+</html>
