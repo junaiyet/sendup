@@ -1,0 +1,38 @@
+.dasboard{
+    .card-main-content{
+        .card-main-items {
+            display: flex;
+            align-items: center;
+            .card-item{
+                width: 50%;
+            }
+        }
+    }
+}
+
+
+@include mobile {
+    .dasboard{
+        .card-main-content{
+            .card-main-items{
+                flex-direction: column;
+                .card-item{
+                    width: 100%;
+                }
+            }
+        }
+    }   
+}
+
+@include tablet{
+    .dasboard{
+        .card-main-content{
+            .card-main-items{
+                flex-direction: column;
+                .card-item{
+                    width: 100%;
+                }
+            }
+        }
+    } 
+}

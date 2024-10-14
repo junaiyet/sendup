@@ -76,4 +76,44 @@
             border-bottom: 2px solid $primary-color;
         }
     }
+    .transactiondetails-tab{
+       .nav-item {
+            display: flex;
+            justify-content: start;
+            width: auto;
+        }
+    }
+
+    .transactiondetails-list{
+        .icon{
+            position: relative;
+            &::after{
+                content: '';
+                position: absolute;
+                left: 3px;
+                top:20px;
+                width: 1px;
+                height: 34px;
+                background-color: $border-color;
+            }
+        }
+    }
+}
+.successfully-manu{
+    display: flex;
+    flex-direction: row ;
+    justify-content: space-between;
+    }
+@include mobile{
+
+    .successfully-manu{
+    flex-direction: column !important;
+    }
+    .successfully-manu img{
+        margin-bottom: 20px;
+    }
+    .successfully-icon{
+      width: 50%;
+    }
+
 }

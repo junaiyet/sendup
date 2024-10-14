@@ -1,0 +1,270 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sendup</title>
+    <!-- ** Plugins Needed for the Project ** -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+    <!-- style.css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="dasboard-body">
+    <div class="d-flex align-items-start dasboard">
+      <div class="bar-section w-100 fild-bg justify-content-between position-fixed p-4 z-1">
+        <a class="" href="#">
+          <img src="images/logo-dasboard.png" alt="" />
+        </a>
+        <div id="open-navbar">
+          <img src="images/bar-icon.png" alt="">
+        </div>
+      </div>
+      <div id="dasboard-navigation" class="dasboard-navigation">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid flex-column">
+            <a class="navbar-brand sm-d-flex justify-content-between align-items-center gap-3" href="#">
+              <img src="images/logo-dasboard.png" alt="" />
+              <button
+                id="close-navbar"
+                class="navbar-toggler rounded-circle p-2"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <img src="images/default-cross.png" alt="">
+              </button>
+            </a>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 flex-column">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  ><img src="images/home-active-icon.png" alt="" />Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><img src="images/card-icon.png" alt="" />Card</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><img
+                    src="images/recipients-icon.png"
+                    alt=""
+                  />Recipients</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><img src="images/payments-icon.png" alt="" />Payments</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><img src="images/earn-icon.png" alt="" />Earn £75
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="dasboard-content ">
+        <div class="container">
+          <div class="top-nav">
+          <div class="top-nav-icon">
+            <a class="icon">
+              <img src="images/left-arrow-icon.png" alt="">
+            </a>
+          </div>
+            <ul class="d-flex gap-3">
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><img class="image-radious" src="images/bel-icon.png" alt=""></a>
+                  </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><img class="image-radious" src="images/network-icon.png" alt=""></a>
+                  </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img class="image-radious" src="images/profile-imgae.png" alt="">   User Name
+                    </a>
+                    <ul class="dropdown-menu p-3">
+                    <li><a class="dropdown-item nav-link mb-2" href="#">Create invoice</a></li>
+                    <li><a class="dropdown-item nav-link" href="#">Share payment link </a></li>
+              
+                    </ul>
+                </li>
+            </ul>
+          </div>
+          <div class="dasboard-main-content">
+          <div class=" mx-auto col-xxl-7 col-lg-12  col-sm-12">
+    
+            <h3 class=" mb-4">Transaction details</h3> 
+        <!--  -->
+              <div>
+                <div class="card">
+                  <div class="card-header bg-transparent p-4">
+                    <div class="d-flex justify-content-between align-items-center">
+                     <div class=" d-flex align-items-center gap-2">
+                       <a class="image icon-rounded fild-bg rounded-circle ">
+                         <img src="images/plus-icon.png" alt="">
+                       </a>
+                      <h6><b>To your GBP balance</b></h6>
+                     </div>
+                      <p class="text-end "><b class="text-primary">+ 0.15 GBP</b> <br>0.20 USD</p>
+                    </div>
+                  </div>
+                  <div class="card-body">
+
+                    <div class="btnk-details-nav-tab transactiondetails-tab mb-5 pb-5">
+                      <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Updates</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Details</button>
+                        </li>                    
+                      </ul>
+                      <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                            <div class=" py-4 px-3">
+                              <!--  -->
+                              <table class="w-100">
+                                <tbody>
+                                  <tr>
+                                    <td>Transfer number</td>
+                                    <td class="text-dark">#1251469129</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <!--  -->
+                              <!--  -->
+                              <div class="border-bottom mt-5 mb-4"></div>
+                              <!--  -->
+                              <ul class="transactiondetails-list">
+                                <li>
+                                  <div class="d-flex gap-3 align-items-start mb-3">
+                                    <div class="icon pt-1 mt-1">
+                                      <img src="images/ok-check-icon.png" alt="">
+                                    </div>
+                                    <p>Wednesday, October 9 at 5:51 PM <br>You set up your transfer</p>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="d-flex gap-3 align-items-start mb-3">
+                                    <div class="icon pt-1 mt-1">
+                                      <img src="images/ok-check-icon.png" alt="">
+                                    </div>
+                                    <p>Wednesday, October 9 at 5:51 PM <br>We've taken the funds from Technoloze Ltd's Sendup account</p>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="d-flex gap-3 align-items-start mb-3">
+                                    <div class="icon pt-1 mt-1">
+                                      <img src="images/ok-check-icon.png" alt="">
+                                    </div>
+                                    <p>Wednesday, October 9 at 5:51 PM <br>We paid out your GBP</p>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="d-flex gap-3 align-items-start mb-3 mt-3">
+                                    <div class="radious bg-dark rounded-circle p-1  mt-2"></div>
+                                    <p>Wednesday, October 9 at 5:51 PM <br><b>Your transfer's complete</b> <br> 
+                                      We sent <b>0.15</b> GBP to Technoloze Ltd. The rate for your transfer was <b>1 USD = 0.7643 GBP.</b>
+                                    </p>
+                                  </div>
+                                </li>
+                              </ul>
+                              <!--  -->
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                                <div class="py-4">
+                                  <div class="row">
+                                    <div class="col-md-6">
+                                      <h6 class="mb-3"><b>Transaction details</b></h6>
+                                      <div class="border-dotted-bottom">
+                                        <table class="w-100">
+                                          <tbody>
+                                            <tr>
+                                              <td class="pb-2">You sent</td>
+                                              <td class="text-end">0.20 USD</td>
+                                            </tr>
+                                            <tr>
+                                              <td class="pb-2">Sendup's fees </td>
+                                              <td class="text-end">0.01 USD</td>
+                                            </tr>
+                                            <tr>
+                                              <td class="pb-2">We converted </td>
+                                              <td class="text-end">0.19 USD</td>
+                                            </tr>
+                                            <tr>
+                                              <td class="pb-2">Exchange rate </td>
+                                              <td class="text-end">1 USD = 0.7643 GBP</td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                      </div>
+                                      <div class="border-dotted-bottom">
+                                        <div class="d-flex justify-content-between py-3">
+                                          <p>You received</p>
+                                          <p><b>0.15 GBP</b></p>
+                                        </div>
+                                      </div>
+                                      <div class="d-flex justify-content-between py-3">
+                                        <p>Transaction number</p>
+                                        <p>#1251469129</p>
+                                      </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                      <h6 class="mb-3"><b>Note <img src="images/qustion-mark-icon.png" alt=""></b></h6>
+                                      <div class="">
+                                        <textarea class="form-control" placeholder="Add a few notes to help you later" name="" id=""></textarea>
+                                      </div>
+                                      <h6 class="mb-3 mt-4"><b>Attachment </b></h6>
+                                      <div class="">
+                                        <div class="border rounded-2 p-2">
+                                          <div class="d-flex align-items-center gap-2">
+                                            <div class="image">
+                                              <img src="images/top-arrow-icon.png" alt="">
+                                            </div>
+                                            <div class="">
+                                              <a href="#" class="underline">Upload file</a>
+                                              <p>PDF, JPG, JPEG, PNG, less than 10MB</p>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+      <!--  -->
+   
+          </div>
+  
+          </div>              
+
+        </div>
+      </div>
+    </div>
+
+    <!-- jquery -->
+    <script src="plugins/jquery/jquery.min.js"></script>
+    <!--Bootstrap  -->
+    <script src="plugins/bootstrap/bootstrap.bundle.min.js"></script>
+    <!--  -->
+    <script src="js//script.js"></script>
+</body>
+
+</html>

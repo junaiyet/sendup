@@ -107,72 +107,60 @@
               <li>Review</li>
               <li>Pay</li>
             </ul>
-            <h3 class="text-center mb-4">Enter their account details</h3> 
-        <!--  -->
-              <div>
-                <form action="">
-                  <div class="mb-3">
-                      <label for="" class="paragraph mb-1">Their email (optional)</label>
-                      <input class="form-control input" type="text" placeholder="example@example.ex">
-                  </div>
-                  <div class="mb-3">
-                    <div class="form-control inpu">
-                      <input class="" id="checkbox" type="checkbox"> <label  for="checkbox">I know their bank details</label>
-  
+            <h3 class="text-center mb-4">How much are you sending?</h3> 
+            <form action="">
+              <div class="currency-box w-100 mb-2">
+                <input
+                  class="form-control input"
+                  type="text"
+                  placeholder="0"
+                />
+                <div class="currency">
+                  <form action="">
+                    <div class="mb-4">
+                      <select class="select" name="" id="">
+                        <option value="">GBP</option>
+                        <option value="">GBP</option>
+                        <option value="">GBP</option>
+                        <option value="">GBP</option>
+                      </select>
                     </div>
-                  </div>
-  
-                </form>
+                  </form>
+                </div>
               </div>
-      <!--  -->
-      <!--  -->
-      <p class="mt-4 mb-3 pb-2 border-bottom">Send with link</p>
-      <!--  -->
-      <div class="btnk-details-nav-tab mb-5 pb-5">
-        <ul class="nav nav-tabs" id="myTab" role="tablist">
-          <li class="nav-item" role="presentation">
-            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Local bank account</button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">IBAN</button>
-          </li>
+              <div class="currency-box w-100 mb-2">
+                <input
+                  class="form-control input"
+                  type="text"
+                  placeholder="0"
+                />
+                <div class="currency">
+                  <form action="">
+                    <div class="mb-4">
+                      <select class="select" name="" id="">
+                        <option value="">GBP</option>
+                        <option value="">GBP</option>
+                        <option value="">GBP</option>
+                        <option value="">GBP</option>
+                      </select>
+                    </div>
+                  </form>
+                </div> 
         
-        </ul>
-        <div class="tab-content" id="myTabContent">
-          <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
-            <form action="" class="mt-3">
-              <div class="mb-3">
-                  <label for="" class="paragraph mb-1">Full name of the account holder</label>
-                  <input class="form-control input" type="text" placeholder="">
               </div>
-              <div class="mb-3">
-                  <label for="" class="paragraph mb-1">UK sort code</label>
-                  <input class="form-control input" type="text" placeholder="40-30-20">
+              <div class="mb-2">
+                <label for="" class="paragraph mb-1">Paying with</label>
+                 <div class="form-control d-flex gap-2 p-2">
+                  <img src="images/US-icon.png" alt="">
+                  <p>Sendup USD balance <br>0.21 USD available</p>
+                 </div>
               </div>
-              <div class="mb-3">
-                  <label for="" class="paragraph mb-1">Account number</label>
-                  <input class="form-control input" type="text" placeholder="12345678">
-              </div>
-            <button class="btn btn-primary w-100">Confirm</button>
+
+              <p class="mt-4 text-center mb-2"><img class="p-2" src="images/info-transparent.png" alt="">Enter an amount in either USD or GBP</p>
+              <button class="btn btn-primary w-100">Continue</button>
             </form>
-          </div>
-          <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
-            <form action="" class="mt-3">
-              <div class="mb-3">
-                  <label for="" class="paragraph mb-1">Full name of the account holder</label>
-                  <input class="form-control input" type="text" placeholder="">
-              </div>
-              <div class="mb-3">
-                  <label for="" class="paragraph d-flex align-items-center mb-1"><span>IBAN</span> <img src="images/qustion-mark-icon.png" alt=""></label>
-                  <input class="form-control input" type="text" placeholder="40-30-20">
-              </div>
-              
-            <button class="btn btn-primary w-100">Confirm</button>
-            </form>
-          </div>
-        </div>
-      </div>
-      <!--  -->
+   
+   
           </div>
   
           </div>              

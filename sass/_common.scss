@@ -40,8 +40,19 @@ button {
     outline: 0;
     box-shadow: none;
 }
+.text-primary{
+    color: $primary-color !important;
+}
 .fild-bg{
     background: $fild-color;
+}
+.text-dark{
+    color: $black !important;
+}
+.border-dotted-bottom{
+    border-bottom: 2px dotted $border-color;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
 }
 .icon-rounded{
 min-width: 48px;

@@ -1,0 +1,267 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sendup</title>
+    <!-- ** Plugins Needed for the Project ** -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+    <!-- style.css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="dasboard-body">
+    <div class="d-flex align-items-start dasboard">
+      <div class="bar-section w-100 fild-bg justify-content-between position-fixed p-4 z-1">
+        <a class="" href="#">
+          <img src="images/logo-dasboard.png" alt="" />
+        </a>
+        <div id="open-navbar">
+          <img src="images/bar-icon.png" alt="">
+        </div>
+      </div>
+      <div id="dasboard-navigation" class="dasboard-navigation">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid flex-column">
+            <a class="navbar-brand sm-d-flex justify-content-between align-items-center gap-3" href="#">
+              <img src="images/logo-dasboard.png" alt="" />
+              <button
+                id="close-navbar"
+                class="navbar-toggler rounded-circle p-2"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <img src="images/default-cross.png" alt="">
+              </button>
+            </a>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 flex-column">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  ><img src="images/home-active-icon.png" alt="" />Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><img src="images/card-icon.png" alt="" />Card</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><img
+                    src="images/recipients-icon.png"
+                    alt=""
+                  />Recipients</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><img src="images/payments-icon.png" alt="" />Payments</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><img src="images/earn-icon.png" alt="" />Earn £75
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="dasboard-content ">
+        <div class="container">
+          <div class="top-nav">
+          <div class="top-nav-icon">
+            <a class="icon">
+              <img src="images/left-arrow-icon.png" alt="">
+            </a>
+          </div>
+            <ul class="d-flex gap-3">
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><img class="image-radious" src="images/bel-icon.png" alt=""></a>
+                  </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><img class="image-radious" src="images/network-icon.png" alt=""></a>
+                  </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img class="image-radious" src="images/profile-imgae.png" alt="">   User Name
+                    </a>
+                    <ul class="dropdown-menu p-3">
+                    <li><a class="dropdown-item nav-link mb-2" href="#">Create invoice</a></li>
+                    <li><a class="dropdown-item nav-link" href="#">Share payment link </a></li>
+              
+                    </ul>
+                </li>
+            </ul>
+          </div>
+          <div class="dasboard-main-content">
+          <div class="col-xxl-5 col-lg-12  col-sm-12 mx-auto">
+            <ul class="recipient-nav">
+              <li class="active">Recipient</li>
+              <li>Amount</li>
+              <li>Review</li>
+              <li>Pay</li>
+            </ul>
+            <h3 class="text-center mb-3">Confirm and send</h3> 
+            <!--  -->
+            <div class="">
+              <div class="border rounded-3 p-3">
+                <span class="paragraph mb-2 d-inline-block">Payment method</span>
+                <div class=" d-flex gap-2 ">
+                  <img src="images/US-icon.png" alt="">
+                  <p>Sendup USD balance <br>0.21 USD available</p>
+                 </div>
+                 <!--  -->
+                 <div>
+                    <div class="mb-2 d-flex justify-content-between align-items-center border-top mt-3 pt-2">
+                      <p class=""><b>Recipient details</b></p>
+                      <a href="" class="underline">Edit</a>
+                    </div>
+                    <table class=" w-100">
+                      <tbody>
+                        <tr >
+                          <td class="pb-2"><small>You send exactly</small></td>
+                          <td class="text-end "><b>0.20 USD</b></td>
+                        </tr>
+                        <tr>
+                          <td class="pb-2"><small>Total fees (included) </small</td>
+                          <td class="text-end"><small>0.01 USD </small</td>
+                        </tr>
+                        <tr>
+                          <td class="pb-2"><small>Total amount we'll convert </small</td>
+                          <td class="text-end"><small>0.19 USD </small</td>
+                        </tr>
+                        <tr>
+                          <td class="pb-2"><small>Guaranteed rate </small</td>
+                          <td class="text-end"><small>1 USD = 0.7643 GBP </small</td>
+                        </tr>
+                        <tr>
+                          <td classlclassass="pb-2"><small>You get </small</td>
+                          <td class="text-end"><b>0.15 GBP</b></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                 <!--  -->
+                 <!--  -->
+                 <div>
+                    <div class="mb-2 d-flex justify-content-between align-items-center border-top mt-3 pt-2">
+                      <p class=""><b>Recipient details</b></p>
+                      <a href="" class="underline">Change</a>
+                    </div>
+                    <table class=" w-100">
+                      <tbody>
+                        <tr >
+                          <td class="pb-2"><small>Account holder name</small></td>
+                          <td class="text-end "><small>Technoloze Ltd </small</td>
+                        </tr>
+                        <tr>
+                          <td class="pb-2"><small>UK sort code </small</td>
+                          <td class="text-end"><small>23-08-01 </small</td>
+                        </tr>
+                        <tr>
+                          <td class="pb-2"><small>Account number </small</td>
+                          <td class="text-end"><small>48935388 </small</td>
+                        </tr>
+                        <tr>
+                          <td class="pb-2"><small>Email (Optional) </small</td>
+                          <td class="text-end"><small>info.technoloze@gmail.com </small</td>
+                        </tr>
+                  
+                      </tbody>
+                    </table>
+                  </div>
+                 <!--  -->
+                 <!--  -->
+                 <div>
+                    <div class="mb-2 d-flex justify-content-between align-items-center border-top mt-3 pt-2">
+                      <p class=""><b>Schedule details</b></p>
+                      <a href="" class="underline">Edit</a>
+                    </div>
+                    <table class=" w-100">
+                      <tbody>
+                        <tr>
+                          <td class="pb-2"><small>Sending </small</td>
+                          <td class="text-end"><small>Now </small</td>
+                        </tr>
+                        <tr>
+                          <td class="pb-2"><small>Should arrive </small</td>
+                          <td class="text-end"><small>in seconds </small</td>
+                        </tr>
+                        <tr>
+                          <td class="pb-2"><small>Repeats </small</td>
+                          <td class="text-end"><small>Never </small</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                 <!--  -->      
+                </div>
+                <!--  -->
+                <div>
+                  <form action="" class="mt-3">
+                    <div class="mb-2">
+                      <label for="" class="paragraph mb-1"> Reference (optional)</label>
+                     <input class="form-control input" type="text" name="" id="">
+                    </div>
+                    <div class="mb-2">
+                      <p>You can cancel for a full refund within 30 minutes of payment, unless the funds
+                        have been picked up or deposited. Make sure you’re sending money to
+                        someone you know and trust, and that their information is correct. Fraudulent
+                        transactions may result in the loss of money with no recourse.</p>
+                    </div>
+                  </form>
+                  <button class="btn btn-primary w-100 mb-5" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Confirm and send</button>
+                </div>
+                <!--  -->
+            </div>
+   <!--  -->
+          </div>
+  
+          </div>              
+
+        </div>
+      </div>
+    </div>
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header border-0">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center">
+          <h5 class="mb-2">Enter your password to approve this transfer</h5>
+          <p>This is a security check to keep your account safe.</p>
+          <form action=""  >
+            <div class="mb-3 password position-relative">
+              <label for="" class="paragraph">Your password</label>
+              <input class="form-control input" type="password">
+              <img class="eye-icon position-absolute" src="images/eye-icon.png" alt="">
+          </div>
+          </form>
+        </div>
+        <div class="modal-footer justify-content-center">
+          <button type="button" class="btn btn-primary w-100">Done</button>
+         <a href="#" class="underline  d-inline-block">Forgot Password?</a>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- Modal -->
+    <!-- jquery -->
+    <script src="plugins/jquery/jquery.min.js"></script>
+    <!--Bootstrap  -->
+    <script src="plugins/bootstrap/bootstrap.bundle.min.js"></script>
+    <!--  -->
+    <script src="js//script.js"></script>
+</body>
+
+</html>
