@@ -108,8 +108,8 @@
                            <img class="image-radious" src="images/doted-icon.png" alt=""> 
                        </a>
                        <ul class="dropdown-menu p-3 end-0">
-                       <li><a class="dropdown-item nav-link mb-2" href="#">Create invoice</a></li>
-                       <li><a class="dropdown-item nav-link" href="#">Share payment link </a></li>
+                       <li><div class="dropdown-item nav-link mb-2 paragraph" >Statements and reports</div></li>
+                       <li><div class="dropdown-item nav-link paragraph" data-bs-toggle="modal" data-bs-target="#closingbalance">Close balance </div></li>
                        </ul>
                    </li>
                    </ul>
@@ -202,7 +202,35 @@
 
             </div>
     </div>
+<!-- Button trigger modal -->
 
+
+<!--closingbalance Modal -->
+<div class="modal fade" id="closingbalance" tabindex="-1" aria-labelledby="closingbalanceLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title fs-5" id="exampleModalLabel">Closing your balance</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+       <div>
+        <div class="d-flex align-items-center gap-3">
+          <div class="icon">
+            <img src="images/down-arrow-icon.png" alt="">
+          </div>
+          <p><b>Move remaining money</b> <br>Convert, transfer or move any remaining money.</p>
+        </div>
+       </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger bg-transparent w-100 border text-danger rounded-5">Close your balance</button>
+        <button type="button" class="btn btn-primary py-2 bg-transparent w-100 border text-primary" data-bs-dismiss="modal">Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- closingbalance modal -->
     <!-- jquery -->
     <script src="plugins/jquery/jquery.min.js"></script>
     <!--Bootstrap  -->

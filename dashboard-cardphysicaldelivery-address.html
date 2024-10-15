@@ -100,93 +100,194 @@
             </ul>
           </div>
           <div class="dasboard-main-content card-main-content">
-          <div class="col-lg-12 col-xxl-8 col-sm-12 ">
-    
-            <div>
-              <div class="carddigital ">
-                <div class="carddigital-item">
-                  <ul>
-                    <li class="mb-3">
-                      <div class="d-flex gap-3 ">
-                        <div class="img pt-1">
-                          <img src="images/safe-icon.png" alt="">
-                        </div>
-                        <div class="text">
-                          <p><b>A safer way to pay online</b></p>
-                          <p>Replace or delete your card details instantly if
-                            you're worried about a transaction.</p>
-                        </div>
+          <div class="col-lg-12 col-xxl-5 col-sm-12 mx-auto">
+               <!--  -->
+                 <div>
+                     <form action="">
+                      <div class="mb-3">
+                        <label for="" class="paragraph">Country</label>
+                        <select class="select w-100" name="" id="">
+                          <option value="">GBP</option>
+                          <option value="">GBP</option>
+                          <option value="">GBP</option>
+                          <option value="">GBP</option>
+                        </select>
                       </div>
-                    </li>
-                    <li class="mb-3">
-                      <div class="d-flex gap-3 ">
-                        <div class="img pt-1">
-                          <img src="images/global-dark-icon.png" alt="">
-                        </div>
-                        <div class="text">
-                          <p class="d-flex justify-content-between"><b>Spend easily, everywhere you go</b><img src="images/info-transparent.png" alt=""></p>
-                          <p>Replace or delete your card details instantly if
-                            you're worried about a transaction.</p>
-                        </div>
+                      <div class="mb-3">
+                        <label for="" class="paragraph">Country</label>
+                        <input class="form-control input" type="text">
                       </div>
-                    </li>
-                    <li class="mb-3">
-                      <div class="d-flex gap-3 ">
-                        <div class="img pt-1">
-                          <img src="images/wifi-icon.png" alt="">
-                        </div>
-                        <div class="text">
-                          <p><b>Pay with Apple Pay or Google Pay</b></p>
-                          <p>Add the card to your mobile wallets and spend
-                            instantly.</p>
-                        </div>
+                      <div class="mb-3">
+                        <label for="" class="paragraph">Address line 1</label>
+                        <input class="form-control input" type="text">
                       </div>
-                    </li>
-                  </ul>
-               <p class="mb-4">By ordering your card, you accept our  <a href="" class="underline">terms and conditions</a> <br> The card is issued by Sendup Payments Limited.</p>
-              <button class="btn btn-primary py-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Order your digital card</button> 
-              </div>
-                <div class="carddigital-item-two">
-                  <div class="">
-                    <img src="images/physical-card.png" alt="">
+                      <div class="mb-3">
+                        <label for="" class="paragraph">Address line 2 (optional)</label>
+                        <input class="form-control input" type="text">
+                      </div>
+                      <div class="mb-3">
+                        <label for="" class="paragraph">Address line 3 (optional)</label>
+                        <input class="form-control input" type="text">
+                      </div>
+                      <div class="mb-3">
+                        <label for="" class="paragraph">City</label>
+                        <input class="form-control input" type="text">
+                      </div>
+                      <div class="mb-3">
+                        <label for="" class="paragraph">Postcode</label>
+                        <input class="form-control input" type="text">
+                      </div>
+                     </form>
+                    </div>
+                    <!--  -->
+                    <button class="btn btn-primary w-100 mt-4 mb-5" data-bs-toggle="modal" data-bs-target="#deliveryType">Continue</button>
                   </div>
-                  <h3 class="mb-2 mt-3">Standard</h3>
-                  <p>Arrives within 13 days</p>
-                  <button class="btn btn-primary-light shadow-sm py-1 mb-5">Free</button> 
-                </div>
-              </div>
-            </div>
-
-   
-          </div>
-  
           </div>              
-
         </div>
       </div>
     </div>
- <!-- Modal -->
- <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+
+ <!--deliveryType Modal -->
+<div class="modal fade" id="deliveryType" tabindex="-1" aria-labelledby="deliveryTypeLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
-      <div class="modal-header border-0">
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body text-center">
-        <h5 class="mb-2">Your card is ready</h5>
-        <p>Start spending online and in-store with Apple Pay or Google Pay..</p>
-        <div class="image">
-          <img src="images/ready-card-img.png" alt="">
+
+      <div class="modal-body">
+        <div class="modal-body ">
+          <h5 class="mb-3 text-center">Choose a delivery type</h5>
+          <div class="">
+            <form action="">
+              <div class="d-flex border rounded-2 p-2 mb-2 ">
+                <div class="form-check  d-flex align-items-center gap-2 ">
+                  <input class="form-check-input cursor" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                  <label class="form-check-label cursor" for="flexRadioDefault1">
+                   
+                    <p><b>Standard post • Free</b><br> Estimated delivery November 3</p>
+                  </label> 
+                  <div>
+                  </div>
+                </div>
+              </div>
+                <div class="d-flex border rounded-2 p-2 mb-2">
+                  <div class="form-check  d-flex align-items-center gap-2 ">
+                    <input class="form-check-input cursor" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                    <label class="form-check-label cursor" for="flexRadioDefault2">
+                      <p><b>Standard post • Free</b><br> Estimated delivery November 3</p>
+                    </label>
+                  </div>
+
+                </div>
+
+            </form>   
+          </div>
         </div>
       </div>
-      <div class="modal-footer justify-content-center">
-        <button type="button" class="btn btn-primary w-100">View Card</button>
-     
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#chooseName">Continue</button>
+
       </div>
     </div>
   </div>
 </div>
-<!-- Modal -->
+<!--deliveryType Modal -->
+ <!--chooseName Modal -->
+<div class="modal fade" id="chooseName" tabindex="-1" aria-labelledby="chooseNameLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+
+      <div class="modal-body">
+        <div class="modal-body ">
+          <h5 class="mb-3 text-center">Choose how your name appears</h5>
+          <div class="">
+            <form action="">
+              <div class="d-flex border rounded-2 p-2 mb-2 ">
+                <div class="form-check  d-flex align-items-center gap-2 ">
+                  <input class="form-check-input cursor" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                  <label class="form-check-label cursor" for="flexRadioDefault1">                 
+                    <p>PAVEL AHMED</p>
+                  </label> 
+                  <div>
+                  </div>
+                </div>
+              </div>
+                <div class="d-flex border rounded-2 p-2 mb-2">
+                  <div class="form-check  d-flex align-items-center gap-2 ">
+                    <input class="form-check-input cursor" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                    <label class="form-check-label cursor" for="flexRadioDefault2">
+                      <p> AHMED PAVEL</p>
+                    </label>
+                  </div>
+
+                </div>
+
+            </form>   
+          </div>
+          <p class="text-center">By continuing you accept our <a href="" class="underline">terms of use</a></p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#viewCard">Continue</button>
+
+      </div>
+    </div>
+  </div>
+</div>
+<!--chooseName Modal -->
+ <!--viewCard Modal -->
+<div class="modal fade" id="viewCard" tabindex="-1" aria-labelledby="viewCardLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+
+      
+        <div class="modal-body text-center">
+          <div class="">
+            <img src="images/tick-dynamic-cion.png" alt="">
+          </div>
+          <h3 class="mb-3 ">Your card is on its way </h3>
+         
+          <p >Start spending online and in-store with Apple Pay or Google Pay before your card arrives.</p>
+        </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#viewPin">View card</button>
+
+      </div>
+    </div>
+  </div>
+</div>
+<!--viewCard Modal -->
+ <!--viewPin Modal -->
+<div class="modal fade" id="viewPin" tabindex="-1" aria-labelledby="viewPinLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+
+      
+        <div class="modal-body text-center">
+          <h3 class="mb-3 ">Set your card PIN </h3>
+          <div class="">
+            <img class="img-fluid" src="images/key-medium-icon.png" alt="">
+          </div>
+        <div class="d-flex justify-content-center">
+          <form action="" class="d-flex gap-2 col-6 ">
+            <input class="form-control input" type="text">
+            <input class="form-control input" type="text">
+            <input class="form-control input" type="text">
+            <input class="form-control input" type="text">
+          </form>
+
+        </div>
+       
+          
+        </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary w-100">Continue</button>
+
+      </div>
+    </div>
+  </div>
+</div>
+<!--viewPin Modal -->
     <!-- jquery -->
     <script src="plugins/jquery/jquery.min.js"></script>
     <!--Bootstrap  -->
