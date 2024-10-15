@@ -36,7 +36,11 @@
         border-radius: 12px;
     }
     }
-
+    .card-details-transaction{
+        display: flex;
+        gap: 20px;
+        
+    }
 }
 
 
@@ -63,9 +67,24 @@
         }
     
     } 
+    .card-details-transaction {
+        justify-content: center;
+        flex-wrap: wrap;
+        .search-item{
+           width: 100%;
+       }
+    }
+
 }
 
 @include tablet{
+    .card-details-transaction {
+        justify-content: center;
+        flex-wrap: wrap;
+        .search-item{
+           width: 100%;
+       }
+    }
     .dasboard{
         .card-main-content{
             .card-main-items{
@@ -76,7 +95,41 @@
             }
         }
     } 
- .w-md-auto{
-    width: auto !important;
- }   
+  
+}
+
+@include desktop{
+    .dasboard .card-details-transaction {
+        gap: 5px;
+    }
+    .dasboard .card-details-transaction {
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+    }
+    .dasboard{
+        .card-main-content{
+            .card-main-items{
+                flex-direction: column;
+                .card-item{
+                    width: 100%;
+                }
+            }
+        }
+    } 
+}
+@include desktop-lg{
+    .dasboard .card-details-transaction {
+        
+        gap: 7px;
+    }
+    .dasboard .dasboard-main-content {
+        margin-right: 10px;
+    }
+}
+@include desktop-xl{
+    .dasboard .dasboard-main-content {
+        margin-right: 50px;
+    }
+
 }
