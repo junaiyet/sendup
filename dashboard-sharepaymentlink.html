@@ -1,0 +1,229 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sendup</title>
+    <!-- ** Plugins Needed for the Project ** -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+    <!-- style.css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="dasboard-body">
+    <div class="d-flex align-items-start dasboard">
+      <div class="bar-section w-100 fild-bg justify-content-between position-fixed p-4 z-1">
+        <a class="" href="#">
+          <img src="images/logo-dasboard.png" alt="" />
+        </a>
+        <div id="open-navbar">
+          <img src="images/bar-icon.png" alt="">
+        </div>
+      </div>
+      <div id="dasboard-navigation" class="dasboard-navigation">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid flex-column">
+            <a class="navbar-brand sm-d-flex justify-content-between align-items-center gap-3" href="#">
+              <img src="images/logo-dasboard.png" alt="" />
+              <button
+                id="close-navbar"
+                class="navbar-toggler rounded-circle p-2"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <img src="images/default-cross.png" alt="">
+              </button>
+            </a>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 flex-column">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  ><img src="images/home-active-icon.png" alt="" />Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><img src="images/card-icon.png" alt="" />Card</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><img
+                    src="images/recipients-icon.png"
+                    alt=""
+                  />Recipients</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><img src="images/payments-icon.png" alt="" />Payments</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><img src="images/earn-icon.png" alt="" />Earn £75
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+            <div class="dasboard-content ">
+              <div class="container">
+                <div class="top-nav">
+                 <div class="top-nav-icon">
+                   <a class="icon">
+                     <img src="images/left-arrow-icon.png" alt="">
+                   </a>
+                 </div>
+                   <ul class="d-flex gap-3">
+                       <li class="nav-item">
+                           <a class="nav-link" href="#"><img class="image-radious" src="images/bel-icon.png" alt=""></a>
+                         </li>
+                       <li class="nav-item">
+                           <a class="nav-link" href="#"><img class="image-radious" src="images/network-icon.png" alt=""></a>
+                         </li>
+                       <li class="nav-item dropdown">
+                           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                               <img class="image-radious" src="images/profile-imgae.png" alt="">   User Name
+                           </a>
+                           <ul class="dropdown-menu p-3">
+                           <li><a class="dropdown-item nav-link mb-2" href="#">Create invoice</a></li>
+                           <li><a class="dropdown-item nav-link" href="#">Share payment link </a></li>
+                    
+                           </ul>
+                       </li>
+                   </ul>
+                </div>
+                <div class="dasboard-main-content">
+              
+                <div class="col-xxl-5 col-lg-12  col-sm-12 mx-auto">              
+                  <h3 class=" mb-5 text-center">How much do you want to convert?</h3>
+                   
+                    <!--  -->
+                    <div>
+                      <form action="">
+                        <div class="mb-3">
+                          <div class="currency-box w-100 ">
+                            <input
+                              class="form-control input fw-bold"
+                              type="text"
+                              placeholder="0"
+                            />
+                            <div class="currency">
+                              <form action="">
+                                <div class="">
+                                  <select class="select" name="" id="">
+                                    <option value="">USD</option>
+                                    <option value="">USD</option>
+                                    <option value="">USD</option>
+                                    <option value="">USD</option>
+                                  </select>
+                                </div>
+                              </form>
+                            </div>
+                          </div>
+                          <p class="mt-2">You have <a href="" class="underline">0.01 USD</a> available in your balance</p>
+                        </div>  
+                        <div class="my-5">
+                          <table class="w-100">
+                            <tbody>
+                              <tr>
+                                <td  class="pb-3"> 
+                                  <div class="d-flex gap-2">
+                                    <div class="shadow-sm fild-bg rounded-circle  min-rounded d-flex justify-content-center align-items-center">-</div>
+                                    <p><b>0 USD</b></p>
+                                  </div>
+                                </td>
+                                <td class="text-end">Our fee</td>
+                              </tr>
+                              <tr>
+                                <td  class="pb-3"> 
+                                  <div class="d-flex gap-2">
+                                    <div class="shadow-sm fild-bg rounded-circle  min-rounded d-flex justify-content-center align-items-center">=</div>
+                                    <p><b>0 USD</b></p>
+                                  </div>
+                                </td>
+                                <td class="text-end">Total amount we’ll convert</td>
+                              </tr>
+                              <tr>
+                                <td  class="pb-3"> 
+                                  <div class="d-flex gap-2">
+                                    <div class="shadow-sm fild-bg rounded-circle  min-rounded d-flex justify-content-center align-items-center">+</div>
+                                    <p><b>0.0000</b></p>
+                                  </div>
+                                </td>
+                                <td class="text-end">Live rate</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>              
+                        <div class="mb-3">
+                          <div class="currency-box w-100 ">
+                            <input
+                              class="form-control input fw-bold"
+                              type="text"
+                              placeholder="0"
+                            />
+                            <div class="currency">
+                              <form action="">
+                                <div class="mb-4">
+                                  <select class="select" name="" id="">
+               
+                                    <option value="">GBP</option>
+                                    <option value="">GBP</option>
+                                    <option value="">GBP</option>
+                                  </select>
+                                </div>
+                              </form>
+                            </div>
+                          </div>
+                        </div>                     
+                      </form>
+                      <div class="mb-5">
+                          <button class="btn btn-primary w-100"  data-bs-toggle="modal" data-bs-target="#Convert">Convert</button>
+                      </div>
+                    </div>
+                    <!--  -->
+                 </div>
+   
+                </div>              
+
+              </div>
+            </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="Convert" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="ConvertLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header border-0">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body text-center">
+            <h5 class="mb-2">Your card is ready</h5>
+            <p>Start spending online and in-store with Apple Pay or Google Pay..</p>
+            <div class="image">
+              <img src="images/ready-card-img.png" alt="">
+            </div>
+          </div>
+          <div class="modal-footer justify-content-center">
+            <button type="button" class="btn btn-primary w-100">View Card</button>
+         
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal -->
+    <!-- jquery -->
+    <script src="plugins/jquery/jquery.min.js"></script>
+    <!--Bootstrap  -->
+    <script src="plugins/bootstrap/bootstrap.bundle.min.js"></script>
+    <!--  -->
+    <script src="js//script.js"></script>
+</body>
+
+</html>
