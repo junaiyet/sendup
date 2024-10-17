@@ -108,7 +108,7 @@
                     <div>
                       <form action="">
                         <div class="mb-3">
-                          <label for="" class="form-label"><b>Convert</b></label>
+                          <label for="" class="form-label"><b>Amount</b></label>
                           <div class="currency-box w-100 ">
                             <input
                               class="form-control input fw-bold"
@@ -130,65 +130,36 @@
                           </div>
                           <p class="mt-2">You have <a href="" class="underline">0.01 USD</a> available in your balance</p>
                         </div>  
-                        <div class="my-5">
-                          <table class="w-100">
-                            <tbody>
-                              <tr>
-                                <td  class="pb-3"> 
-                                  <div class="d-flex gap-2">
-                                    <div class="shadow-sm fild-bg rounded-circle  min-rounded d-flex justify-content-center align-items-center">-</div>
-                                    <p><b>0 USD</b></p>
-                                  </div>
-                                </td>
-                                <td class="text-end">Our fee</td>
-                              </tr>
-                              <tr>
-                                <td  class="pb-3"> 
-                                  <div class="d-flex gap-2">
-                                    <div class="shadow-sm fild-bg rounded-circle  min-rounded d-flex justify-content-center align-items-center">=</div>
-                                    <p><b>0 USD</b></p>
-                                  </div>
-                                </td>
-                                <td class="text-end">Total amount we’ll convert</td>
-                              </tr>
-                              <tr>
-                                <td  class="pb-3"> 
-                                  <div class="d-flex gap-2">
-                                    <div class="shadow-sm fild-bg rounded-circle  min-rounded d-flex justify-content-center align-items-center">+</div>
-                                    <p><b>0.0000</b></p>
-                                  </div>
-                                </td>
-                                <td class="text-end">Live rate</td>
-                              </tr>
-                            </tbody>
-                          </table>
-                        </div>              
-                        <div class="mb-3">
-                          <label for="" class="form-label"><b>Convert</b></label>
-                          <div class="currency-box w-100 ">
-                            <input
-                              class="form-control input fw-bold"
-                              type="text"
-                              placeholder="0"
-                            />
-                            <div class="currency">
-                              <form action="">
-                                <div class="mb-4">
-
-                                  <select class="select" name="" id="">
-               
-                                    <option value="">GBP</option>
-                                    <option value="">GBP</option>
-                                    <option value="">GBP</option>
-                                  </select>
-                                </div>
-                              </form>
-                            </div>
-                          </div>
-                        </div>                     
+                         <div class="mb-3">
+                          <label for="" class="form-label"><small>Product or service (optional)</small></label>
+                          <input class="form-control " type="text">
+                         </div>                   
                       </form>
+                      <p class="border-bottom pb-3 mb-4">Payment methods</p>
+                      <div >
+                         <div class="d-flex justify-content-between align-items-center mb-3">
+                              <div class="d-flex align-items-center gap-3">
+                                <div class="icon-rounded rounded-circle fild-bg">
+                                  <img src="images/sendup-icon.png" alt="">
+                                </div>
+                                <p><b>Pay with Sendup</b> <br>Instant and free. </p>
+                              </div>
+                              <button class="btn btn-sm btn-primary-light fw-bold">learn more</button>
+                         </div>
+                         <div class="d-flex justify-content-between align-items-center mb-3">
+                              <div class="d-flex align-items-center gap-3">
+                                <div class="icon-rounded rounded-circle fild-bg opacity-75">
+                                  <img src="images/card-details-icon.png" alt="">
+                                </div>
+                                <p class="opacity-75"><b>Pay with Sendup</b> <br>Instant and free. </p>
+                              </div>
+                              <div class="form-check form-switch opacity-75">
+                                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                              </div>
+                         </div>
+                      </div>
                       <div class="mb-5">
-                          <button class="btn btn-primary w-100"  data-bs-toggle="modal" data-bs-target="#Convert">Convert</button>
+                          <button class="btn btn-primary w-100"  data-bs-toggle="modal" data-bs-target="#Convert">Create</button>
                       </div>
                     </div>
                     <!--  -->
