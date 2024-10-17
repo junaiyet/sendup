@@ -1,0 +1,285 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sendup</title>
+    <!-- ** Plugins Needed for the Project ** -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+    <!-- style.css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="dasboard-body">
+    <div class="d-flex align-items-start dasboard">
+      <div class="bar-section w-100 fild-bg justify-content-between position-fixed p-4 z-1">
+        <a class="" href="#">
+          <img src="images/logo-dasboard.png" alt="" />
+        </a>
+        <div id="open-navbar">
+          <img src="images/bar-icon.png" alt="">
+        </div>
+      </div>
+      <div id="dasboard-navigation" class="dasboard-navigation">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid flex-column">
+            <a class="navbar-brand sm-d-flex justify-content-between align-items-center gap-3" href="#">
+              <img src="images/logo-dasboard.png" alt="" />
+              <button
+                id="close-navbar"
+                class="navbar-toggler rounded-circle p-2"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <img src="images/default-cross.png" alt="">
+              </button>
+            </a>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 flex-column">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  ><img src="images/home-active-icon.png" alt="" />Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><img src="images/card-icon.png" alt="" />Card</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><img
+                    src="images/recipients-icon.png"
+                    alt=""
+                  />Recipients</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><img src="images/payments-icon.png" alt="" />Payments</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><img src="images/earn-icon.png" alt="" />Earn £75
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+            <div class="dasboard-content ">
+              <div class="container">
+                <div class="top-nav">
+                 <div class="top-nav-icon">
+                   <a class="icon">
+                     <img src="images/left-arrow-icon.png" alt="">
+                   </a>
+                 </div>
+                   <ul class="d-flex gap-3">
+                       <li class="nav-item">
+                           <a class="nav-link" href="#"><img class="image-radious" src="images/bel-icon.png" alt=""></a>
+                         </li>
+                       <li class="nav-item">
+                           <a class="nav-link" href="#"><img class="image-radious" src="images/network-icon.png" alt=""></a>
+                         </li>
+                       <li class="nav-item dropdown">
+                           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                               <img class="image-radious" src="images/profile-imgae.png" alt="">   User Name
+                           </a>
+                           <ul class="dropdown-menu p-3">
+                           <li><a class="dropdown-item nav-link mb-2" href="#">Create invoice</a></li>
+                           <li><a class="dropdown-item nav-link" href="#">Share payment link </a></li>
+                    
+                           </ul>
+                       </li>
+                   </ul>
+                </div>
+                <div class="dasboard-main-content">
+                 <div class="col-xxl-6 col-lg-12  col-sm-12 mx-auto">
+                   <ul class="recipient-nav">
+                    <li >Amount</li>
+                    <li>Verification</li>
+                    <li class="active">Payment</li>                 
+                   </ul>
+                   <h3 class="text-center mb-3">Next, send us the money using your bank</h3> 
+                    <p class="text-center mb-3">You'll need to do this next bit manually. Use the bank details below to make a
+                      payment from your bank account.</p>
+                      <p class="text-center mb-3">SWIFT payments are handled by intermediary banks before reaching Wise. <b>There will likely be extra fees, in addition to what your bank charges.</b> <a href="" class="underline">Read more</a></p>
+                  <div class="border rounded-3 p-3">
+                      <p class="border-bottom pb-3 mb-3 mt-4"><b>SWIFT transfer instructions</b></p>           
+                      <!--  -->
+                  <table class=" w-100 mb-4">
+                    <tbody>
+                      <tr>
+                        <td class="pb-2 w-50"><small>Payee name</small</td>
+                        <td class=" w-50"><small>Reference </small> <b>(Required) <img src="images/qustion-mark-icon.png" alt=""> </b></td>
+                      </tr>
+                      <tr>
+                        <td class="pb-2 w-50">Transferwise Ltd</td>
+                        <td class=" w-50">P61055044</td>
+                      </tr>
+                      
+                    </tbody>
+                  </table>
+                  <!--  -->
+                  <table class=" w-100 mb-4">
+                    <tbody>
+                      <tr>
+                        <td class="pb-2w-50"><small>IBAN:</small</td>
+                        <td class="w-50"><small>Bank code (BIC/SWIFT): </small> </td>
+                      </tr>
+                      <tr>
+                        <td class="pb-2w-50">GB66BARC20958787123933</td>
+                        <td class="w-50">BARCGB22XXX</td>
+                      </tr>
+                      
+                    </tbody>
+                  </table>
+                  <!--  -->
+                  <table class=" w-100 mb-4">
+                    <tbody>
+                      <tr>
+                        <td class="pb-2 w-50"><small>Amount to send:</small</td>
+                 
+                      </tr>
+                      <tr>
+                        <td class=" w-50">6.26 USD</td>
+                      </tr>
+                      
+                    </tbody>
+                  </table>
+                  <!--  -->
+                  <table class=" w-100 mb-3">
+                    <tbody>
+                      <tr>
+                        <td class="pb-2w-50"><small>Our bank address</small</td>
+                        <td class="w-50"><small>Wise address: </small></td>
+                      </tr>
+                      <tr>
+                        <td class="pb-2w-50">Barclays 
+                          1 Churchill Place 
+                          London
+                          United Kingdom
+                          E14 5HP</td>
+                        <td class="w-50">6th Floor
+                          The Tea Building
+                          56 Shoreditch High Street
+                          London E1 6JJ
+                          United Kingdom</td>
+                      </tr>
+                      
+                    </tbody>
+                  </table>
+                  <!--  -->
+                  <p class="mb-3">Wise never takes money automatically from your account, you must send a
+                    wire to us.</p>
+                    <p class="mb-3">You can use your bank's online banking or mobile app to make your wire
+                      transfer to Wise.</p>
+                </div>
+                  <div class="mb-5 pb-5 mt-3">
+                    <button class="btn btn-primary btn-primary-border w-100 mb-3" >I've made my SWIFT transfer</button>
+                    <button class="btn btn-primary btn-primary-border w-100 mb-3" >I'll transfer my money later</button>
+                    <button class="btn btn-danger btn-danger-border rounded-5 w-100 mb-3" >Cancel this <br> transfer</button>
+                  </div>
+                  <!--  -->
+          
+                
+               <!--  -->
+                 </div>
+   
+                </div>              
+
+              </div>
+            </div>
+    </div>
+    <!-- Modal -->
+    <div  class="modal fade"  id="staticBackdrop" data-bs-backdrop="static"  data-bs-keyboard="false"  tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">How would you like to pay?</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+               <div> 
+                <div class="">
+                  <a href="" class="d-flex justify-content-between align-items-center mb-3">
+                    <div class="d-flex align-items-center gap-2">                  
+                          <div class="icon-rounded rounded-circle fild-bg">
+                            <img src="images/card-details-icon.png" alt="">
+                          </div>                    
+                          <p><b>Debit card </b> <br>Send from your Visa or Mastercard. <br> Sorry, you can't pay with this method for transfers less than
+                            3 USD.</p>
+                      </div>
+                      <div class="arrow">
+                        <img src="images/right-icon.png" alt="">
+                      </div>
+                  </a>
+                  <a href="" class="d-flex justify-content-between align-items-center mb-3">
+                    <div class="d-flex align-items-center gap-2">                  
+                          <div class="icon-rounded rounded-circle fild-bg">
+                            <img src="images/card-details-icon.png" alt="">
+                          </div>                    
+                          <p><b>Debit card </b> <br>Send from your Visa or Mastercard. <br> Sorry, you can't pay with this method for transfers less than
+                            3 USD.</p>
+                      </div>
+                      <div class="arrow">
+                        <img src="images/right-icon.png" alt="">
+                      </div>
+                  </a>
+                  <a href="" class="d-flex justify-content-between align-items-center mb-3">
+                    <div class="d-flex align-items-center gap-2">                  
+                          <div class="icon-rounded rounded-circle fild-bg">
+                            <img src="images/bank-icon.png" alt="">
+                          </div>                    
+                          <p> <b>Wire transfer</b> <br>Manually transfer the money to Wise using your bank.<br>6.11 USD fee, should arrive in 2 hours.</p>
+                      </div>
+                      <div class="arrow">
+                        <img src="images/right-icon.png" alt="">
+                      </div>
+                  </a>
+                  <a href="" class="d-flex justify-content-between align-items-center mb-3 opacity-75">
+                    <div class="d-flex align-items-center gap-2">                  
+                          <div class="icon-rounded rounded-circle fild-bg opacity-75">
+                            <img src="images/ach.png" alt="">
+                          </div>                    
+                          <p><b>Connected bank account (ACH)</b> Pay with ACH by connecting your U.S. bank account with
+                            Wise. 0.01 USD fee, should arrive in seconds.</p>
+                      </div>
+                      <div class="arrow">
+                        <img src="images/right-icon.png" alt="">
+                      </div>
+                  </a>
+                  <a href="" class="d-flex justify-content-between align-items-center mb-3 opacity-75">
+                    <div class="d-flex align-items-center gap-2">                  
+                          <div class="icon-rounded rounded-circle fild-bg opacity-75">
+                            <img src="images/global-icon.png" alt="">
+                          </div>                    
+                          <p><b>International wire</b>Send USD from your bank account outside the US. Your
+                            bank will charge you extra fees. 6.11 USD fee, should arrive by October 21.</p>
+                      </div>
+                      <div class="arrow">
+                        <img src="images/right-icon.png" alt="">
+                      </div>
+                  </a>
+                </div>
+               </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal -->
+    <!-- jquery -->
+    <script src="plugins/jquery/jquery.min.js"></script>
+    <!--Bootstrap  -->
+    <script src="plugins/bootstrap/bootstrap.bundle.min.js"></script>
+    <!--  -->
+    <script src="js//script.js"></script>
+</body>
+
+</html>

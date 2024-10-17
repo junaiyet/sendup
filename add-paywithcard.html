@@ -1,0 +1,315 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sendup</title>
+    <!-- ** Plugins Needed for the Project ** -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+    <!-- style.css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="dasboard-body">
+    <div class="d-flex align-items-start dasboard">
+      <div class="bar-section w-100 fild-bg justify-content-between position-fixed p-4 z-1">
+        <a class="" href="#">
+          <img src="images/logo-dasboard.png" alt="" />
+        </a>
+        <div id="open-navbar">
+          <img src="images/bar-icon.png" alt="">
+        </div>
+      </div>
+      <div id="dasboard-navigation" class="dasboard-navigation">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid flex-column">
+            <a class="navbar-brand sm-d-flex justify-content-between align-items-center gap-3" href="#">
+              <img src="images/logo-dasboard.png" alt="" />
+              <button
+                id="close-navbar"
+                class="navbar-toggler rounded-circle p-2"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <img src="images/default-cross.png" alt="">
+              </button>
+            </a>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 flex-column">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  ><img src="images/home-active-icon.png" alt="" />Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><img src="images/card-icon.png" alt="" />Card</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><img
+                    src="images/recipients-icon.png"
+                    alt=""
+                  />Recipients</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><img src="images/payments-icon.png" alt="" />Payments</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><img src="images/earn-icon.png" alt="" />Earn £75
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+            <div class="dasboard-content ">
+              <div class="container">
+                <div class="top-nav">
+                 <div class="top-nav-icon">
+                   <a class="icon">
+                     <img src="images/left-arrow-icon.png" alt="">
+                   </a>
+                 </div>
+                   <ul class="d-flex gap-3">
+                       <li class="nav-item">
+                           <a class="nav-link" href="#"><img class="image-radious" src="images/bel-icon.png" alt=""></a>
+                         </li>
+                       <li class="nav-item">
+                           <a class="nav-link" href="#"><img class="image-radious" src="images/network-icon.png" alt=""></a>
+                         </li>
+                       <li class="nav-item dropdown">
+                           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                               <img class="image-radious" src="images/profile-imgae.png" alt="">   User Name
+                           </a>
+                           <ul class="dropdown-menu p-3">
+                           <li><a class="dropdown-item nav-link mb-2" href="#">Create invoice</a></li>
+                           <li><a class="dropdown-item nav-link" href="#">Share payment link </a></li>
+                    
+                           </ul>
+                       </li>
+                   </ul>
+                </div>
+                <div class="dasboard-main-content">
+                 <div class="col-xxl-5 col-lg-12  col-sm-12 mx-auto">
+                   <ul class="recipient-nav">
+                    <li >Amount</li>
+                    <li>Verification</li>
+                    <li class="active">Payment</li>                 
+                   </ul>
+                   <h3 class="text-center mb-4">Pay with your card</h3> 
+                    <!--  -->
+                    <div>
+                                  <!--  -->
+                 <div class="   account-details-nav-tab">
+                  <nav>
+                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                      <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">New Card</button>
+                      <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Saved Card</button>
+                   
+                    </div>
+                  </nav>
+                  <div class="tab-content pay-with-card" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+                      <div class="mt-4">
+                     
+                        <form action="">
+                          <div class="mb-3">
+                            <label for="" class="form-label"><b>Card Number</b></label>
+                            <div class="position-relative">
+                              <input class="form-control py-3" type="text">
+                              <div class="icons d-flex gap-2 position-absolute">
+                                <div class="img">
+                                  <img src="images/visa-icon.png" alt="">
+                                </div>
+                                <div class="img">
+                                  <img src="images/mastercard.png" alt="">
+                                </div>
+                                <div class="img">
+                                  <img src="images/amarican-express-icon.png" alt="">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="mb-3">
+                            <div class="row">
+                              <div class="col-6">
+                                <div class="">
+                                  <label for="" class="form-label"><b>Expiry date (MM/YY)</b></label>
+                                  <input class="form-control py-3" type="date">
+                                </div>
+                              </div>
+                              <div class="col-6">
+                                <div class="">
+                                  <label for="" class="form-label"><b>Security code (CVC/CVV)</b></label>
+                                  <div class="position-relative ">
+                                    <input class="form-control py-3 ps-5" type="text">
+                                    <div class="position-absolute secirity-code">
+                                      <img src="images/secirity-code-icon.png" alt="">
+                                    </div>
+                                  </div>
+
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="mb-3">
+                            <div class="d-flex justify-content-between align-items-center">
+                              <div class="d-flex align-items-center gap-2">
+                                <div class="icon-rounded rounded-circle fild-bg">
+                                  <img src="images/card-details-icon.png" alt="">
+                                </div>
+                                <p><b>Save this card for future payments</b></p>
+                              </div>
+                              <div class="">
+                                <div class="form-check form-switch">
+                                  <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                              
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                      <div class="mb-5 pb-5 mt-3">
+                        <button class="btn btn-primary w-100 " >Pay 5.23 USD</button>
+                      </div>
+                    </div>
+                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+                     
+                      <div class="mt-4">
+                        <form action="">
+                          <div class="mb-3">
+                            <div class="d-flex justify-content-between align-items-center border rounded-3 p-3">
+                              <div class="d-flex align-items-center gap-3">
+                                <div class="img">
+                                  <img src="images/mastercard.png" alt="">
+                                </div>
+                                <p><b>mastercard card •••• 9364</b><br>Valid 02/2028</p>
+                              </div>
+
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                              </div>
+                            </div>
+                          </div>
+                        </form>
+                   
+                      </div>
+                      <div class="mb-5 pb-5 mt-3">
+                        <button class="btn btn-primary w-100 " >Pay 5.23 USD</button>
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>
+                <!--  -->
+                    </div>
+                    <!--  -->
+         
+                  <!--  -->
+          
+                
+               <!--  -->
+                 </div>
+   
+                </div>              
+
+              </div>
+            </div>
+    </div>
+    <!-- Modal -->
+    <div  class="modal fade"  id="staticBackdrop" data-bs-backdrop="static"  data-bs-keyboard="false"  tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">How would you like to pay?</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+               <div> 
+                <div class="">
+                  <a href="" class="d-flex justify-content-between align-items-center mb-3">
+                    <div class="d-flex align-items-center gap-2">                  
+                          <div class="icon-rounded rounded-circle fild-bg">
+                            <img src="images/card-details-icon.png" alt="">
+                          </div>                    
+                          <p><b>Debit card </b> <br>Send from your Visa or Mastercard. <br> Sorry, you can't pay with this method for transfers less than
+                            3 USD.</p>
+                      </div>
+                      <div class="arrow">
+                        <img src="images/right-icon.png" alt="">
+                      </div>
+                  </a>
+                  <a href="" class="d-flex justify-content-between align-items-center mb-3">
+                    <div class="d-flex align-items-center gap-2">                  
+                          <div class="icon-rounded rounded-circle fild-bg">
+                            <img src="images/card-details-icon.png" alt="">
+                          </div>                    
+                          <p><b>Debit card </b> <br>Send from your Visa or Mastercard. <br> Sorry, you can't pay with this method for transfers less than
+                            3 USD.</p>
+                      </div>
+                      <div class="arrow">
+                        <img src="images/right-icon.png" alt="">
+                      </div>
+                  </a>
+                  <a href="" class="d-flex justify-content-between align-items-center mb-3">
+                    <div class="d-flex align-items-center gap-2">                  
+                          <div class="icon-rounded rounded-circle fild-bg">
+                            <img src="images/bank-icon.png" alt="">
+                          </div>                    
+                          <p> <b>Wire transfer</b> <br>Manually transfer the money to Wise using your bank.<br>6.11 USD fee, should arrive in 2 hours.</p>
+                      </div>
+                      <div class="arrow">
+                        <img src="images/right-icon.png" alt="">
+                      </div>
+                  </a>
+                  <a href="" class="d-flex justify-content-between align-items-center mb-3 opacity-75">
+                    <div class="d-flex align-items-center gap-2">                  
+                          <div class="icon-rounded rounded-circle fild-bg opacity-75">
+                            <img src="images/ach.png" alt="">
+                          </div>                    
+                          <p><b>Connected bank account (ACH)</b> Pay with ACH by connecting your U.S. bank account with
+                            Wise. 0.01 USD fee, should arrive in seconds.</p>
+                      </div>
+                      <div class="arrow">
+                        <img src="images/right-icon.png" alt="">
+                      </div>
+                  </a>
+                  <a href="" class="d-flex justify-content-between align-items-center mb-3 opacity-75">
+                    <div class="d-flex align-items-center gap-2">                  
+                          <div class="icon-rounded rounded-circle fild-bg opacity-75">
+                            <img src="images/global-icon.png" alt="">
+                          </div>                    
+                          <p><b>International wire</b>Send USD from your bank account outside the US. Your
+                            bank will charge you extra fees. 6.11 USD fee, should arrive by October 21.</p>
+                      </div>
+                      <div class="arrow">
+                        <img src="images/right-icon.png" alt="">
+                      </div>
+                  </a>
+                </div>
+               </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal -->
+    <!-- jquery -->
+    <script src="plugins/jquery/jquery.min.js"></script>
+    <!--Bootstrap  -->
+    <script src="plugins/bootstrap/bootstrap.bundle.min.js"></script>
+    <!--  -->
+    <script src="js//script.js"></script>
+</body>
+
+</html>
