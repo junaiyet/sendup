@@ -43,6 +43,10 @@ button {
 .text-primary{
     color: $primary-color !important;
 }
+.bg-primary-color{
+
+    color: $primary-bg !important;
+}
 .bg-primary{
     background: $primary-bg !important;
 }
@@ -96,6 +100,20 @@ align-items: center;
         background-color: $primary-bg-hover;
     color: $white;
     }
+}
+.btn-primary-border{
+    background-color: transparent ;
+    border:2px solid $primary-color !important;
+}
+.btn-danger{
+    transition: all linear .3s;
+    font-weight: 600;
+}
+.btn-danger-border{
+    color: $danger-hover-color;
+    background-color: transparent ;
+    border:2px solid $danger-hover-color !important;
+
 }
 @include mobile{
     .btn-primary {
