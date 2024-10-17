@@ -1,0 +1,180 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sendup</title>
+    <!-- ** Plugins Needed for the Project ** -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+    <!-- style.css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="dasboard-body">
+    <div class="d-flex align-items-start dasboard">
+      <div class="bar-section w-100 fild-bg justify-content-between position-fixed p-4 z-1">
+        <a class="" href="#">
+          <img src="images/logo-dasboard.png" alt="" />
+        </a>
+        <div id="open-navbar">
+          <img src="images/bar-icon.png" alt="">
+        </div>
+      </div>
+      <div id="dasboard-navigation" class="dasboard-navigation">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid flex-column">
+            <a class="navbar-brand sm-d-flex justify-content-between align-items-center gap-3" href="#">
+              <img src="images/logo-dasboard.png" alt="" />
+              <button
+                id="close-navbar"
+                class="navbar-toggler rounded-circle p-2"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <img src="images/default-cross.png" alt="">
+              </button>
+            </a>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 flex-column">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  ><img src="images/home-active-icon.png" alt="" />Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><img src="images/card-icon.png" alt="" />Card</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><img
+                    src="images/recipients-icon.png"
+                    alt=""
+                  />Recipients</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><img src="images/payments-icon.png" alt="" />Payments</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><img src="images/earn-icon.png" alt="" />Earn £75
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+            <div class="dasboard-content ">
+              <div class="container">
+                <div class="top-nav">
+                 <div class="top-nav-icon">
+                   <a class="icon">
+                     <img src="images/left-arrow-icon.png" alt="">
+                   </a>
+                 </div>
+                   <ul class="d-flex gap-3">
+                       <li class="nav-item">
+                           <a class="nav-link" href="#"><img class="image-radious" src="images/bel-icon.png" alt=""></a>
+                         </li>
+                       <li class="nav-item">
+                           <a class="nav-link" href="#"><img class="image-radious" src="images/network-icon.png" alt=""></a>
+                         </li>
+                       <li class="nav-item dropdown">
+                           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                               <img class="image-radious" src="images/profile-imgae.png" alt="">   User Name
+                           </a>
+                           <ul class="dropdown-menu p-3">
+                           <li><a class="dropdown-item nav-link mb-2" href="#">Create invoice</a></li>
+                           <li><a class="dropdown-item nav-link" href="#">Share payment link </a></li>
+                    
+                           </ul>
+                       </li>
+                   </ul>
+                </div>
+                <div class="dasboard-main-content">
+              
+                <div class="col-xxl-5 col-lg-12  col-sm-12 mx-auto"> 
+                <div class="text-center">
+                  <img src="images/tick-dynamic-cion.png" alt=""> 
+                </div>            
+                  <h2 class=" mb-3 text-center bg-primary-color">Share your link</h2>
+                   <p class="text-center">By sharing your link, you accept that some of your details will be shared, <br>too. <a href="" class="underline">Learn more</a></p>
+                    <!--  -->
+                    <div>
+                        <div class="mb-3">
+                          <p class="mb-2">Request link</p>
+                          <div class="border p-2 rounded-3">
+                            <a href="https://sendup.ai/pay/r/9aLNO8quZokSaWs" class="bg-primary-color">https://sendup.ai/pay/r/9aLNO8quZokSaWs</a>
+                            <button class="btn btn-sm btn-primary">open <img src="images/top-right-arro-icon.png" alt=""></button>
+                          </div>
+                        </div>
+                        <div class="my-5">
+                          <div class="d-flex justify-content-around">
+                            <div class="icon-rounded rounded-circle bg-primary">
+                              <img src="images/link-icon.png" alt="">
+                            </div>
+                            <div class="icon-rounded rounded-circle bg-primary">
+                              <img src="images/qr-icon.png" alt="">
+                            </div>
+                            <div class="icon-rounded rounded-circle bg-primary">
+                              <img src="images/plus-icon.png" alt="">
+                            </div>
+                          </div>
+                        </div>
+                      <div class="mb-5">
+                          <button class="btn btn-primary w-100"  data-bs-toggle="modal" data-bs-target="#qr-code">Exit</button>
+                      </div>
+                    </div>
+                    <!--  -->
+                 </div>
+   
+                </div>              
+
+              </div>
+            </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="qr-code" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="qr-codeLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title fw-bold">Scan to pay</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body ">
+                <div class="text-center">
+                  <img src="images/t-icon.png" alt="">
+                </div>
+                <h4 class="text-center">Technoloze Ltd</h4>
+                <div class="text-center">
+                  <img src="images/qr-big-icon.png" alt="">
+                </div>
+                <p class="mt-4 mb-3 pb-2 w-100 border-bottom text-left">Request details</p>
+                <p class="mb-3">Amount <br><b>5 USD</b></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary w-100">Download</button>
+         
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!-- Modal -->
+    <!-- jquery -->
+    <script src="plugins/jquery/jquery.min.js"></script>
+    <!--Bootstrap  -->
+    <script src="plugins/bootstrap/bootstrap.bundle.min.js"></script>
+    <!--  -->
+    <script src="js//script.js"></script>
+</body>
+
+</html>

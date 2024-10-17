@@ -61,6 +61,10 @@ button {
     padding-bottom: 5px;
     margin-bottom: 5px;
 }
+.border-dotted-2{
+    border: 2px dotted $border-color;
+
+}
 .icon-rounded{
     width: 48px;
 min-width: 48px;

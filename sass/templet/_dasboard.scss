@@ -297,6 +297,19 @@
             transform: translateY(-50%);
         }
     }
+    .create-sm-btn{
+        padding-top: 2px;
+        padding-bottom: 2px;
+        img{
+            width: 12px;
+            transform: translateY(-2px);
+        }
+    }
+    .create-invoice{
+        textarea{
+            height: 144px;
+        }
+    }
 }
 .currency-box {
     display: flex;
