@@ -241,24 +241,50 @@
  <div class="modal fade" id="show-pin" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="show-pinLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
-      <div class="modal-header border-0">
+      <div class="modal-header ">
+        <h5 class="modal-title">Here's your PIN</h5>
+
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-      <div class="modal-body text-center">
-        <h5 class="mb-2">Your card is ready</h5>
-        <p>Start spending online and in-store with Apple Pay or Google Pay..</p>
-        <div class="image">
-          <img src="images/ready-card-img.png" alt="">
+      <div class="modal-body ">
+        <h5 class="mb-2 text-center">Enter your password to show your card PIN</h5>
+        <p class="mb-3 text-center">This is a security check to keep your account safe.</p>
+        <form action=""  >
+          <div class="mb-3 password position-relative">
+            <label for="" class="paragraph">Your password</label>
+            <input class="form-control input" type="password">
+            <img class="eye-icon position-absolute" src="images/eye-icon.png" alt="">
         </div>
+        </form>
       </div>
-      <div class="modal-footer justify-content-center">
-        <button type="button" class="btn btn-primary w-100">View Card</button>
-     
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#show-pin-two">Done</button>     
       </div>
     </div>
   </div>
 </div>
 <!--show-pin Modal -->
+ <!--show-pin-two Modal -->
+ <div class="modal fade" id="show-pin-two" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="show-pin-twoLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header ">
+        <h5 class="modal-title">Here's your PIN</h5>
+
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body ">
+        <h5 class="mb-2 text-center">8076</h5>
+        <p class="mb-3 text-center">Come back to the app if you forget it.</p>
+   
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#show-pin-two">Done</button>     
+      </div>
+    </div>
+  </div>
+</div>
+<!--show-pin-two Modal -->
  <!--card-details Modal -->
  <div class="modal fade" id="card-details" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="card-detailsLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">
@@ -458,6 +484,7 @@
   </div>
 </div>
 <!--delete-card Modal -->
+>
     <!-- jquery -->
     <script src="plugins/jquery/jquery.min.js"></script>
     <!--Bootstrap  -->

@@ -180,14 +180,58 @@
         </div>
       </div>
       <div class="modal-footer justify-content-center">
-        <button type="button" class="btn btn-primary w-100">View Card</button>
+        <button type="button" class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#card-details">View Card</button>
      
       </div>
     </div>
   </div>
 </div>
-<!-- Modal -->
-    <!-- jquery -->
+<!-- card-details -->
+<div class="modal fade" id="card-details" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="card-detailsLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header ">
+        <h5 class="modal-title">Card details</h5>
+
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body ">
+        <div>
+          <div class="mb-3">
+            <div class="d-flex justify-content-between align-items-center">
+                <p>Cardholder name<br> <span class="fw-semibold">PAVEL AHMED</span></p>
+                <button class="btn btn-sm btn-primary py-1">copy</button>
+            </div>
+          </div>
+          <div class="mb-3">
+            <div class="d-flex justify-content-between align-items-center">
+                <p>Card number<br> <span class="fw-semibold">9306 5400 1008 9364</span></p>
+                <button class="btn btn-sm btn-primary py-1">copy</button>
+            </div>
+          </div>
+          <div class="mb-3">
+            <div class="d-flex justify-content-between align-items-center">
+                <p>Expiry date<br> <span class="fw-semibold">12/28</span></p>
+                <button class="btn btn-sm btn-primary py-1">copy</button>
+            </div>
+          </div>
+          <div class="mb-3">
+            <div class="d-flex justify-content-between align-items-center">
+                <p>Security code<br> <span class="fw-semibold">490</span></p>
+                <button class="btn btn-sm btn-primary py-1">copy</button>
+            </div>
+          </div>
+
+        </div>
+   
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary w-100" >Done</button>     
+      </div>
+    </div>
+  </div>
+</div>
+    <!-- Card details -->
     <script src="plugins/jquery/jquery.min.js"></script>
     <!--Bootstrap  -->
     <script src="plugins/bootstrap/bootstrap.bundle.min.js"></script>
