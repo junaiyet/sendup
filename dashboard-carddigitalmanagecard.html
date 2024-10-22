@@ -41,12 +41,12 @@
             </a>
             <ul class="navbar-nav me-auto mb-2 mb-lg-0 flex-column">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"
+                <a class="nav-link " aria-current="page" href="#"
                   ><img src="images/home-active-icon.png" alt="" />Home</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#"
+                <a class="nav-link active" href="#"
                   ><img src="images/card-icon.png" alt="" />Card</a
                 >
               </li>
@@ -100,7 +100,7 @@
             </ul>
           </div>
           <div class="dasboard-main-content card-main-content">
-          <div class="col-lg-12 col-xxl-8 col-sm-12 ">
+          <div class="col-lg-12 col-xl-8 col-sm-12 ">
                <div >
                 <h3>Digital card</h3>
                 <p>•••• 9364</p>
@@ -114,15 +114,27 @@
                         <!--  -->
                         <div class="mt-4 mt-sm-0">
                             <div class="d-flex gap-5 ">
-                              <div class="icon-rounded bg-primary rounded-circle cursor"  data-bs-toggle="modal" data-bs-target="#show-pin">
-                                <img src="images/show-pin-icon.png" alt="">
+                              <div class="d-flex flex-column align-items-center">
+                                <div class="icon-rounded bg-primary rounded-circle cursor"  data-bs-toggle="modal" data-bs-target="#show-pin">
+                                  <img src="images/show-pin-icon.png" alt="">
+                                </div>
+                                <p><b>Show Pin</b></p>
+
                               </div>
-                              <div class="icon-rounded bg-primary rounded-circle cursor" data-bs-toggle="modal" data-bs-target="#card-details">
-                                <img src="images/card-details-icon.png" alt="">
+                              <div class="d-flex flex-column align-items-center">
+                                <div class="icon-rounded bg-primary rounded-circle cursor" data-bs-toggle="modal" data-bs-target="#card-details">
+                                  <img src="images/card-details-icon.png" alt="">
+                                </div>
+                                <p><b>Card Details</b></p>
                               </div>
-                              <a class="icon-rounded bg-primary rounded-circle">
-                                <img src="images/freeze-drak-icon.png" alt="">
-                              </a>
+                              <div class="d-flex flex-column align-items-center">
+                                <a href="dashboard-carddigitalfreeze.html" class="icon-rounded bg-primary rounded-circle">
+                                  <img src="images/freeze-drak-icon.png" alt="">
+                                </a>
+                                <p><b>Freeze Card</b></p>
+                              </div>
+                            
+                             
                             </div>
                         </div>
                         <!--  -->
@@ -132,7 +144,7 @@
                         <p class="border-bottom mb-4 pb-2 mt-4">Manage card</p>
                         <ul>
                           <li class="mb-4">
-                            <a href="" class="d-flex justify-content-between align-items-center">
+                            <a href="dashboard-carddigitaltransactions.html" class="d-flex justify-content-between align-items-center">
                               <div class="d-flex align-items-center gap-2">
                                 <div class="icon-rounded fild-bg rounded-circle">
                                   <img src="images/three-dot-icon.png" alt="">
@@ -444,12 +456,12 @@
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header ">
-        <h5 class="modal-title">Unblock your PIN</h5>
+        <h5 class="modal-title">Are you sure you want to replace your card?</h5>
 
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body ">
-        <p class="mb-3 text-center">Your old card will stop working when you order a new one.</p>
+        <p class="mb-3 ">Your old card will stop working when you order a new one.</p>
 
       </div>
       <div class="modal-footer justify-content-center">

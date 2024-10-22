@@ -37,6 +37,7 @@
         display: flex;
         justify-content: space-between;
         align-items: end;
+        padding-left: 60px;
         .top-nav-icon .icon{
             display: flex;
             align-items: center;
@@ -345,6 +346,7 @@
     .dasboard{
         .dasboard-main-content {
             margin-right: 0;
+            padding-left: 0 !important;
         }   
         .calculator-box-items {
 
@@ -352,6 +354,8 @@
         }
         .acc-details{
          flex-direction: column;
+         align-items: start;
+         gap: 10px;
         }
     } 
     .account-details-main-content{
@@ -393,7 +397,7 @@
         padding-left: 60px;
     }
 }
-@include desktop-xxl{
+@include desktop-xl{
     .dasboard .dasboard-navigation {
  
         padding: 60px 80px;

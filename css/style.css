@@ -342,6 +342,7 @@ h3,
   }
   .top-nav {
     margin-top: 100px !important;
+    padding-left: 0 !important;
   }
   .dasboard {
     gap: 0;
@@ -381,7 +382,7 @@ h3,
     padding: 60px 40px !important;
   }
 }
-@media (min-width: 1200px) and (max-width: 1299.98px) {
+@media (min-width: 1300px) and (max-width: 1399.98px) {
   .navigation {
     padding: 20px 40px;
   }
@@ -481,6 +482,7 @@ h3,
   display: flex;
   justify-content: space-between;
   align-items: end;
+  padding-left: 60px;
 }
 .dasboard .top-nav .top-nav-icon .icon {
   display: flex;
@@ -756,12 +758,15 @@ h3,
   }
   .dasboard .dasboard-main-content {
     margin-right: 0;
+    padding-left: 0 !important;
   }
   .dasboard .calculator-box-items {
     flex-direction: column;
   }
   .dasboard .acc-details {
     flex-direction: column;
+    align-items: start;
+    gap: 10px;
   }
   .account-details-main-content {
     flex-direction: column;
@@ -788,7 +793,7 @@ h3,
     margin-right: 0px;
   }
 }
-@media (min-width: 1200px) and (max-width: 1299.98px) {
+@media (min-width: 1300px) and (max-width: 1399.98px) {
   .dasboard .dasboard-navigation {
     padding: 60px 80px;
   }
@@ -1014,7 +1019,7 @@ h3,
     margin-right: 10px;
   }
 }
-@media (min-width: 1200px) and (max-width: 1299.98px) {
+@media (min-width: 1300px) and (max-width: 1399.98px) {
   .dasboard .dasboard-main-content {
     margin-right: 50px;
   }
