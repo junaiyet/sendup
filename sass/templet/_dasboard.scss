@@ -57,6 +57,7 @@
     }
     .dasboard-main-content{
         margin-right: 150px;
+        padding-left: 100px;
      
     }
 
@@ -373,10 +374,32 @@
 @include tablet{
     .dasboard .dasboard-main-content {
         margin-right: 0px;
+        
     }
 }
 @include desktop{
     .dasboard .dasboard-main-content {
         margin-right: 0px;
+        
+    }
+}
+@include desktop-xl{
+    .dasboard .dasboard-navigation {
+ 
+        padding: 60px 80px;
+    }
+    .dasboard .dasboard-main-content {
+       
+        padding-left: 60px;
+    }
+}
+@include desktop-xxl{
+    .dasboard .dasboard-navigation {
+ 
+        padding: 60px 80px;
+    }
+    .dasboard .dasboard-main-content {
+       
+        padding-left: 60px;
     }
 }

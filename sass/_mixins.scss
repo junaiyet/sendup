@@ -22,7 +22,12 @@
     }
 }
 @mixin desktop-xl {
-    @media (min-width: 1200px) and (max-width: 1298.98px) {
+    @media (min-width: 1200px) and (max-width: 1299.98px) {
+        @content;
+    }
+}
+@mixin desktop-xxl {
+    @media (min-width: 1300px) and (max-width: 1399.98px) {
         @content;
     }
 }

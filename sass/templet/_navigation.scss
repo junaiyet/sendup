@@ -133,5 +133,23 @@
     .dasboard .dasboard-navigation {
         padding: 60px 40px !important;
     }
+    
+
+}
+
+
+
+@include desktop-xl{
+
+    .navigation {
+        padding: 20px 40px;
+    }
+
+}
+@include desktop-xxl{
+
+    .navigation {
+        padding: 30px 40px;
+    }
 
 }
