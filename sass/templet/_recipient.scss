@@ -103,9 +103,13 @@
     display: flex;
     flex-direction: row ;
     justify-content: space-between;
+    padding: 30px 60px !important;
     }
 @include mobile{
+    .successfully-manu {
 
+        padding: 30px 30px !important;
+    }
     .successfully-manu{
     flex-direction: column !important;
     }

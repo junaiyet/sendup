@@ -38,6 +38,7 @@
         justify-content: space-between;
         align-items: end;
         padding-left: 60px;
+        padding-right: 60px;
         .top-nav-icon .icon{
             display: flex;
             align-items: center;
@@ -58,7 +59,7 @@
     }
     .dasboard-main-content{
         margin-right: 150px;
-        padding-left: 100px;
+        padding-left: 65px;
      
     }
 
@@ -172,7 +173,7 @@
     }
     .doted-icon{
     .dropdown-menu{
-            transform: translate(-90% ,27px) !important;
+            transform: translate(-90% ,45px) !important;
             width: 176px;
     }
     }
@@ -386,21 +387,13 @@
         margin-right: 0px;
         
     }
+
 }
+
 @include desktop-xl{
     .dasboard .dasboard-navigation {
- 
-        padding: 60px 80px;
-    }
-    .dasboard .dasboard-main-content {
-       
-        padding-left: 60px;
-    }
-}
-@include desktop-xl{
-    .dasboard .dasboard-navigation {
- 
-        padding: 60px 80px;
+
+        padding: 60px 50px;
     }
     .dasboard .dasboard-main-content {
        
