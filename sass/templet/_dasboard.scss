@@ -23,7 +23,7 @@
             margin-bottom: 92px;
         }
         .nav-link{
-            // color: $primary-color;
+            color: $primary-color;
             font-weight: 600;
             img{
                 margin-right: 5px;
@@ -377,14 +377,40 @@
 }
 
 @include tablet{
+
+    .dasboard .top-nav {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
     .dasboard .dasboard-main-content {
-        margin-right: 0px;
+        margin-right: 5px;
+        padding-left: 5px;
         
     }
 }
 @include desktop{
     .dasboard .dasboard-main-content {
         margin-right: 0px;
+        
+    }
+    .dasboard .top-nav {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .dasboard .dasboard-main-content {
+        margin-right: 10px;
+        padding-left: 10px;
+        
+    }
+}
+@include desktop-lg{
+    .dasboard .top-nav {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .dasboard .dasboard-main-content {
+        margin-right: 40px;
+        padding-left: 40px;
         
     }
 

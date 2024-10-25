@@ -125,17 +125,25 @@
     .dasboard .dasboard-navigation {
         padding: 60px 20px !important;
     }
+    #close-navbar{
+        display: none;
+    }
 }
 @include desktop {
     .dasboard .dasboard-navigation {
         padding: 60px 20px !important;
+    }
+    #close-navbar{
+        display: none;
     }
 }
 @include desktop-lg{
     .dasboard .dasboard-navigation {
         padding: 60px 40px !important;
     }
-    
+    #close-navbar{
+        display: none;
+    }
 
 }
 
