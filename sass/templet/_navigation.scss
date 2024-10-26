@@ -94,6 +94,7 @@
     .top-nav{
         margin-top: 100px !important;
         padding-left: 0 !important;
+        padding-right: 0 !important; 
     }
     .dasboard {
         gap: 0;
@@ -122,12 +123,41 @@
 
 
 @include tablet {
+    .bar-section{
+        display: flex !important;
+    }
+    .top-nav{
+        margin-top: 100px !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important; 
+    }
+    .dasboard {
+        gap: 0;
+    }
+    
+    .dasboard-navigation {
+    padding: 20px !important;
+    background-color:$fild-color;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    transform: translateX(-100%);
+    transition: 0.3s;
+    width: 250px;
+    min-height: 100vh;
+  }
+  .navigation-open {
+    transform: translateX(0);
+  }
+  .dasboard .navbar .navbar-brand {
+    margin-bottom: 30px !important;
+}
     .dasboard .dasboard-navigation {
         padding: 60px 20px !important;
     }
-    #close-navbar{
-        display: none;
-    }
+
 }
 @include desktop {
     .dasboard .dasboard-navigation {
