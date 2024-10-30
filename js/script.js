@@ -14,3 +14,18 @@ $(document).ready(function() {
       passwordField.attr('type', fieldType);
   });
 });
+
+// Select all <p> elements that contain the word "Banana"
+// $(".container p:contains('Banana')").css("color", "red");
+// jQuery to filter paragraphs based on input
+$("#search").on("keyup", function() {
+  const searchText = $(this).val().toLowerCase();
+  
+  $(".container p").filter(function() {
+    $(this).toggle($(this).text().toLowerCase().indexOf(searchText) > -1);
+  });
+});
+
+$("#select-item").on("click", function() {
+  $(".area").toggleClass("wrapper");
+});

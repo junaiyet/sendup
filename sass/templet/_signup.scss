@@ -23,6 +23,42 @@
     color: #4B7972;
 }
 
+.area{
+    display: none;
+    border: 1px solid $border-color;
+    border-radius: 0.375rem;
+    &.wrapper{
+        display: block;
+    }
+    .list{
+        height: 80px;
+        overflow-y: scroll;
+        p{
+            cursor: pointer;
+            text-align: left;
+            padding: 7px;
+
+        }
+        &::-webkit-scrollbar {
+            width: 8px;
+        }
+        
+        &::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 10px;
+        }
+        
+        &::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 10px; 
+        }
+        
+        &::-webkit-scrollbar-thumb:hover {
+            background: #555; 
+        }
+    }
+}
+
 .account-types{
     width: 700px;
     .account{
