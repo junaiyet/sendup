@@ -31,13 +31,15 @@
         gap: 20px;
         .account-type{
             padding: 50px;
-            width: 48%;
+            // width: 48%;
             background-color: $fild-color;
             border-radius: 10px;
         }
     }
 }
-
+.label-active{
+    border: 1px solid $primary-color;
+}
 @include mobile{
     .account-types{
         width: auto;
