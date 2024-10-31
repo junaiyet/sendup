@@ -58,7 +58,7 @@
 <!-- Modal -->
 <!-- Button trigger modal -->
 
-  
+
   <!-- Modal -->
   <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
@@ -66,13 +66,17 @@
         <div class="modal-header border-0">
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div class="modal-body text-center">
+        <div class="modal-body text-center file-design">
           <h5 class="mb-2">Confirm your identity</h5>
           <p>Select your document's issuing country</p>
           <form action=""  class="upload-area">
             <button class="btn-backroundless"><img src="images/top-arrow-icon.png" alt=""> <br> <b>Upload your document</b></button>
             <p class="mb-4">You can click or drag and drop your government-issued identification document for verification</p>
-            <button class="btn btn-primary">Or select file</button>
+   
+              <label for="file-upload" class="btn btn-primary">
+                Or select file
+            </label>
+             <input id="file-upload" type="file" />
           </form>
           <p class="mt-2 mb-5">We Accepted PDF, JPG, PNG, Maximum File Size: 10MB Ensure the document is clear, legible, and shows all details</p>
         </div>
